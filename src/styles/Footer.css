@@ -1,0 +1,13 @@
+.dropdown-toggle::after {
+  margin-bottom: -2px;
+}
+
+footer {
+  position: bottom;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}/*# sourceMappingURL=Footer.css.map */

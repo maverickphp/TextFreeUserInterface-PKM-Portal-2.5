@@ -1,0 +1,10 @@
+.dropdown-menu {
+  background-color: #172b4d;
+  --bs-dropdown-min-width: 15rem;
+}
+
+.dropdown-item {
+  color: white;
+  border: 1px solid white;
+  padding: 3% 6%;
+}/*# sourceMappingURL=Navbar.css.map */
