@@ -3,12 +3,8 @@ import "../../styles/HeroSection.css";
 import { Link } from "react-router-dom";
 
 import homeaudio from "../pages/audios/homeaudios/homehero.mp3";
-// import anotheraudio from "../pages/audios/homeaudios/homecc.mp3";
 
 import ReactAudioPlayer from "react-audio-player";
-// import { Button } from "./Button";
-// import mainBanner from "../UI/OtherImages/mainbanner.jpg";
-// import AudioButton from "./AudioButton";
 
 function HeroSection() {
   return (

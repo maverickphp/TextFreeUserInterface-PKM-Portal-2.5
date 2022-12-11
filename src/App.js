@@ -15,7 +15,6 @@ import LoadingBar from "react-top-loading-bar";
 import PageNotFound from "./components/pages/Error404";
 
 export default function App() {
-
   useEffect(() => {
     changeProgress();
   }, []);

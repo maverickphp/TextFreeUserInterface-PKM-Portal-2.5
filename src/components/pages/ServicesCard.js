@@ -36,12 +36,12 @@ export default function serviceCard() {
   const cardStyle = {
     color: "white",
     borderRadius: "5%",
-    boxShadow: "20px 30px 50px 10px grey",
+    boxShadow: "30px 10px 50px 10px grey",
   };
 
   return (
-    <div style={{ margin: "20px 0px" }}>
-      <h1 className="mt-3 mb-4" style={{ fontSize: 42 }}>
+    <div style={{ margin: "20px 0px", marginBottom: "50px" }}>
+      <h1 className="mt-3 mb-5" style={{ fontSize: 42 }}>
         ہماری خدمات
       </h1>
       <div className="d-flex justify-content-center pb-2 pt-2">
@@ -158,7 +158,7 @@ export default function serviceCard() {
             <h5
               className="card-title"
               style={{
-                backgroundColor: "#E9967A",  //peach color
+                backgroundColor: "#E9967A", //peach color
                 padding: "15px",
                 borderRadius: "10px",
               }}
