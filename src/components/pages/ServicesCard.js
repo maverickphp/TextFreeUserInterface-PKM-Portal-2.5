@@ -64,7 +64,15 @@ export default function serviceCard() {
               کریکٹر سرٹیفیکیٹ
             </h5>
             <ReactAudioPlayer
-              style={{ width: "100%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-1"
               controls
               src={homecc}
@@ -90,7 +98,15 @@ export default function serviceCard() {
               جنرل پولیس کی تصدیق
             </h5>
             <ReactAudioPlayer
-              style={{ width: "100%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-1"
               controls
               src={homegpv}
@@ -116,7 +132,15 @@ export default function serviceCard() {
               لرنر ڈرائیونگ لائسنس
             </h5>
             <ReactAudioPlayer
-              style={{ width: "100%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-1"
               controls
               src={homeldl}
@@ -142,7 +166,15 @@ export default function serviceCard() {
               ملازمین کی رجسٹریشن
             </h5>
             <ReactAudioPlayer
-              style={{ width: "100%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-1"
               controls
               src={homeer}
@@ -168,7 +200,15 @@ export default function serviceCard() {
               ایف آئی آر کی کاپی
             </h5>
             <ReactAudioPlayer
-              style={{ width: "100%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-1"
               controls
               src={homecof}
@@ -196,7 +236,15 @@ export default function serviceCard() {
               خواتین پر تشدد کی رپورٹ
             </h5>
             <ReactAudioPlayer
-              style={{ width: "100%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-1"
               controls
               src={homewvr}
@@ -222,7 +270,15 @@ export default function serviceCard() {
               کرائم رپورٹ
             </h5>
             <ReactAudioPlayer
-              style={{ width: "100%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-1"
               controls
               src={homecr}
@@ -248,7 +304,15 @@ export default function serviceCard() {
               نقصان کی رپورٹ
             </h5>
             <ReactAudioPlayer
-              style={{ width: "100%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-1"
               controls
               src={homelr}
@@ -274,7 +338,15 @@ export default function serviceCard() {
               کرایہ داروں کی رجسٹریشن
             </h5>
             <ReactAudioPlayer
-              style={{ width: "100%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-1"
               controls
               src={hometr}
@@ -300,7 +372,15 @@ export default function serviceCard() {
               گاڑیوں کی رجسٹریشن
             </h5>
             <ReactAudioPlayer
-              style={{ width: "100%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-1"
               controls
               src={homevr}

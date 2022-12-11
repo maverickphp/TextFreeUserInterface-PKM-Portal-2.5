@@ -61,6 +61,14 @@ export default function Services(props) {
     margin: "auto",
   };
 
+  const textStyle = {
+    padding: "10px 5px",
+    borderRadius: "250px",
+    backgroundColor: "orange",
+    margin: "auto",
+    width: "70px",
+    height: "70px",
+  };
   return (
     <Tab.Container
       {...props.changeProgress(20)}
@@ -68,18 +76,44 @@ export default function Services(props) {
       defaultActiveKey={window.location.hash}
     >
       <Col sm={12}>
-        <Tab.Content className="col-12" style={myStyle}>
+        <Tab.Content className="col-10" style={myStyle}>
           <Tab.Pane eventKey="#id=a">
             <h2>کریکٹر سرٹیفکیٹ کا تعارف</h2>
             <ReactAudioPlayer
-              style={{ width: "30%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-4"
               src={cci}
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 1:</h2>
+                <div className="d-flex flex-row">
+                  <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                    1
+                  </h2>
+                  <ReactAudioPlayer
+                    style={{
+                      padding: "5px",
+                      marginBottom: "4px",
+                      marginRight: "5px",
+                      borderRadius: "250px",
+                      height: "60px",
+                      width: "110px",
+                      backgroundColor: "black",
+                    }}
+                    className="mt-3"
+                    src={ccstep1}
+                    controls
+                  />
+                </div>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
                   to="/centers"
@@ -89,19 +123,22 @@ export default function Services(props) {
                 >
                   قریب ترین مرکز
                 </Link>
-
-                <ReactAudioPlayer
-                  style={{ width: "60%" }}
-                  className="mt-3"
-                  src={ccstep1}
-                  controls
-                />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 2:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  2
+                </h2>
                 <img className="img-fluid" src={ccstep2} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={ccstep1}
                   controls
@@ -110,24 +147,44 @@ export default function Services(props) {
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 3:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  3
+                </h2>
                 <img className="img-fluid" src={ccstep3} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={step3}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 4:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  4
+                </h2>
                 <img
                   className="img-fluid"
                   src={courierstep4}
                   alt="stepsimage"
                 />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={bycourierstep4}
                   controls
@@ -139,14 +196,24 @@ export default function Services(props) {
             <h2>جنرل پولیس کی تصدیق</h2>
 
             <ReactAudioPlayer
-              style={{ width: "30%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-3"
               src={gpv}
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 1:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  1
+                </h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
                   to="/centers"
@@ -157,17 +224,35 @@ export default function Services(props) {
                   قریب ترین مرکز
                 </Link>
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={gpvstep1}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 2:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  2
+                </h2>
                 <img className="img-fluid" src={gpvstep2} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={cci}
                   controls
@@ -176,24 +261,44 @@ export default function Services(props) {
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 3:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  3
+                </h2>
                 <img className="img-fluid" src={gpvstep3} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={step3}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 4:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  4
+                </h2>
                 <img
                   className="img-fluid"
                   src={courierstep4}
                   alt="stepsimage"
                 />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={bycourierstep4}
                   controls
@@ -205,14 +310,24 @@ export default function Services(props) {
             <h2>لرنر ڈرائیونگ لائسنس کا تعارف</h2>
 
             <ReactAudioPlayer
-              style={{ width: "30%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-3"
               src={ldl}
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 1:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  1
+                </h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
                   to="/centers"
@@ -223,17 +338,35 @@ export default function Services(props) {
                   قریب ترین مرکز
                 </Link>
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={ldlstep1}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 2:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  2
+                </h2>
                 <img className="img-fluid" src={ldlstep2} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={cci}
                   controls
@@ -242,20 +375,40 @@ export default function Services(props) {
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 3:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  3
+                </h2>
                 <img className="img-fluid" src={ldlstep3} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={step3}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 4:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  4
+                </h2>
                 <img className="img-fluid" src={handstep4} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={byhandstep4}
                   controls
@@ -268,14 +421,24 @@ export default function Services(props) {
             <h2>ملازمین کی رجسٹریشن</h2>
 
             <ReactAudioPlayer
-              style={{ width: "30%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-3"
               src={er}
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 1:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  1
+                </h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
                   to="/centers"
@@ -286,17 +449,35 @@ export default function Services(props) {
                   قریب ترین مرکز
                 </Link>
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={erstep1}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 2:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  2
+                </h2>
                 <img className="img-fluid" src={erstep2} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={cci}
                   controls
@@ -305,20 +486,40 @@ export default function Services(props) {
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 3:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  3
+                </h2>
                 <img className="img-fluid" src={freestep3} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={step3}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 4:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  4
+                </h2>
                 <img className="img-fluid" src={handstep4} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={byhandstep4}
                   controls
@@ -330,14 +531,24 @@ export default function Services(props) {
             <h2>کرایہ داروں کی رجسٹریشن</h2>
 
             <ReactAudioPlayer
-              style={{ width: "30%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-3"
               src={tr}
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 1:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  1
+                </h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
                   to="/centers"
@@ -348,17 +559,35 @@ export default function Services(props) {
                   قریب ترین مرکز
                 </Link>
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={trstep1}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 2:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  2
+                </h2>
                 <img className="img-fluid" src={trstep2} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={cci}
                   controls
@@ -367,20 +596,40 @@ export default function Services(props) {
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 3:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  3
+                </h2>
                 <img className="img-fluid" src={freestep3} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={step3}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 4:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  4
+                </h2>
                 <img className="img-fluid" src={handstep4} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={byhandstep4}
                   controls
@@ -392,14 +641,24 @@ export default function Services(props) {
             <h2>گاڑی کی تصدیق</h2>
 
             <ReactAudioPlayer
-              style={{ width: "30%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-3"
               src={vv}
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 1:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  1
+                </h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
                   to="/centers"
@@ -410,17 +669,35 @@ export default function Services(props) {
                   قریب ترین مرکز
                 </Link>
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={vvstep1}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 2:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  2
+                </h2>
                 <img className="img-fluid" src={vvstep2} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={cci}
                   controls
@@ -429,20 +706,40 @@ export default function Services(props) {
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 3:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  3
+                </h2>
                 <img className="img-fluid" src={vvstep3} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={step3}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 4:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  4
+                </h2>
                 <img className="img-fluid" src={handstep4} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={byhandstep4}
                   controls
@@ -454,14 +751,24 @@ export default function Services(props) {
             <h2>نقصان کی رپورٹ</h2>
 
             <ReactAudioPlayer
-              style={{ width: "30%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-3"
               src={lr}
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 1:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  1
+                </h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
                   to="/centers"
@@ -472,17 +779,35 @@ export default function Services(props) {
                   قریب ترین مرکز
                 </Link>
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={lrstep1}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 2:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  2
+                </h2>
                 <img className="img-fluid" src={lrstep2} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={cci}
                   controls
@@ -491,20 +816,40 @@ export default function Services(props) {
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 3:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  3
+                </h2>
                 <img className="img-fluid" src={freestep3} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={step3}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 4:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  4
+                </h2>
                 <img className="img-fluid" src={handstep4} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={byhandstep4}
                   controls
@@ -516,14 +861,24 @@ export default function Services(props) {
             <h2>کرائم رپورٹ کا تعارف</h2>
 
             <ReactAudioPlayer
-              style={{ width: "30%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-3"
               src={cr}
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 1:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  1
+                </h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
                   to="/centers"
@@ -534,17 +889,35 @@ export default function Services(props) {
                   قریب ترین مرکز
                 </Link>
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={crstep1}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 2:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  2
+                </h2>
                 <img className="img-fluid" src={crstep2} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={cci}
                   controls
@@ -553,20 +926,40 @@ export default function Services(props) {
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 3:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  3
+                </h2>
                 <img className="img-fluid" src={freestep3} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={step3}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 4:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  4
+                </h2>
                 <img className="img-fluid" src={handstep4} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={byhandstep4}
                   controls
@@ -578,14 +971,24 @@ export default function Services(props) {
             <h2>خواتین پر تشدد کی رپورٹ</h2>
 
             <ReactAudioPlayer
-              style={{ width: "30%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-3"
               src={wvr}
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 1:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  1
+                </h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
                   to="/centers"
@@ -596,17 +999,35 @@ export default function Services(props) {
                   قریب ترین مرکز
                 </Link>
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={wvrstep1}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 2:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  2
+                </h2>
                 <img className="img-fluid" src={wvrstep2} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={cci}
                   controls
@@ -615,20 +1036,40 @@ export default function Services(props) {
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 3:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  3
+                </h2>
                 <img className="img-fluid" src={freestep3} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={step3}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 4:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  4
+                </h2>
                 <img className="img-fluid" src={handstep4} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={byhandstep4}
                   controls
@@ -640,14 +1081,24 @@ export default function Services(props) {
             <h2>ایف آئی آر کی کاپی</h2>
 
             <ReactAudioPlayer
-              style={{ width: "30%" }}
+              style={{
+                padding: "5px",
+                marginBottom: "4px",
+                marginRight: "5px",
+                borderRadius: "250px",
+                height: "60px",
+                width: "110px",
+                backgroundColor: "black",
+              }}
               className="mt-3"
               src={cof}
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 1:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  1
+                </h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
                   to="/centers"
@@ -658,17 +1109,35 @@ export default function Services(props) {
                   قریب ترین مرکز
                 </Link>
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={cofstep1}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 2:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  2
+                </h2>
                 <img className="img-fluid" src={cofstep2} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={cci}
                   controls
@@ -677,17 +1146,29 @@ export default function Services(props) {
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
               <div className="col-6">
-                <h2 className="text-start">Step 3:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  3
+                </h2>
                 <img className="img-fluid" src={freestep3} alt="stepsimage" />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={step3}
                   controls
                 />
               </div>
               <div className="col-6" style={{ marginLeft: "20px" }}>
-                <h2 className="text-start">Step 4:</h2>
+                <h2 className="mb-3 mt-2 text-center" style={textStyle}>
+                  4
+                </h2>
                 <img
                   {...props.changeProgress(100)}
                   className="img-fluid"
@@ -695,7 +1176,15 @@ export default function Services(props) {
                   alt="stepsimage"
                 />
                 <ReactAudioPlayer
-                  style={{ width: "60%" }}
+                  style={{
+                    padding: "5px",
+                    marginBottom: "4px",
+                    marginRight: "5px",
+                    borderRadius: "250px",
+                    height: "60px",
+                    width: "110px",
+                    backgroundColor: "black",
+                  }}
                   className="mt-3"
                   src={byhandstep4}
                   controls

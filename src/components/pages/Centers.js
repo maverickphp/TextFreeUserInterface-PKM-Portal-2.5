@@ -40,10 +40,6 @@ import sialkot from "..//UI//CenterCardsImages//sialkot.jpg";
 import tobateksingh from "..//UI//CenterCardsImages//tobateksingh.jpg";
 import vehari from "..//UI//CenterCardsImages//vehari.jpg";
 
-
-
-
-
 function Centers(props) {
   document.title = "PKM Punjab - Our Centers";
   return (
