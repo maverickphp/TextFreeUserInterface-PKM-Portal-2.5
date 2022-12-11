@@ -1,6 +1,6 @@
 import React from "react";
 import HeroSection from "../UI/HeroSection";
-import ServicesCard from "../UI/ServicesCard";
+// import ServicesCard from "..//ServicesCard";
 // import mainBanner from "../UI/OtherImages/mainbanner.jpg";
 // import Slider from "../UI/Slider";
 
@@ -10,8 +10,8 @@ export default function Home(props) {
   return (
     <>
       {/* <Slider {...props.changeProgress(20)} /> */}
-      <HeroSection {...props.changeProgress(50)} />
-      <ServicesCard {...props.changeProgress(100)} />
+      <HeroSection {...props.changeProgress(100)} />
+      {/* <ServicesCard {...props.changeProgress(100)} /> */}
     </>
   );
 }

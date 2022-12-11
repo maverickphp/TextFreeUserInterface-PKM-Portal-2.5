@@ -30,6 +30,22 @@ class AudioButton extends Component {
     this.setState({ isPlaying: !isPlaying });
   };
 
+  // Get all <audio> elements.
+  audios = document.querySelectorAll("audio");
+
+  // Pause all <audio> elements except for the one that started playing.
+  pauseOtherAudios({ target }) {
+    for (const audio of this.audios) {
+      if (audio !== target) {
+        audio.pause();
+      }
+    }
+  }
+  // Listen for the 'play' event on all the <audio> elements.
+  // for (this.AudioButton.audio of this.AudioButton.audios) {
+  //   audio.addEventListener('play', this.pauseOtherAudios);
+  // }
+
   render() {
     return (
       <div>
@@ -52,6 +68,11 @@ class AudioButton extends Component {
               marginTop: "1px",
             }}
           ></img>
+          {/* <audio ref="audio_tag" src={navbaraudio} /> */}
+          <audio hidden>
+            <source src={navbaraudio} type="aud/mp3" />
+            Your browser does not support the audio tag.
+          </audio>
         </button>
       </div>
     );

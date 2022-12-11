@@ -1,24 +1,32 @@
 import React from "react";
-import "../../styles/HeroSection.css";
+
 import homeaudio from "../pages/audios/homeaudios/homehero.mp3";
-import ReactAudioPlayer from "react-audio-player";
+import anotheraudio from "../pages/audios/homeaudios/homecc.mp3";
+
+// import ReactAudioPlayer from "react-audio-player";
 // import { Button } from "./Button";
-import mainBanner from "../UI/OtherImages/mainbanner.jpg";
+// import mainBanner from "../UI/OtherImages/mainbanner.jpg";
+import AudioButton from "./AudioButton";
 
 function HeroSection() {
   return (
     <>
-      <div className="contain" style={{ width: "100%" }}>
+      <AudioButton src={homeaudio} />
+      <AudioButton src={anotheraudio} />
+      {/* <AudioButton src={anotheraudio} /> */}
+      {/* <div className="contain" style={{ width: "100%" }}>
         <img src={mainBanner} alt="mainBanner" />
         <h2>خوش آمدید</h2>
-        <ReactAudioPlayer
+      </div> */}
+
+      {/* <ReactAudioPlayer
           style={{ width: "28%", height: "10%", marginTop: "7%" }}
           className="btn"
           src={homeaudio}
           autoPlay
           controls
-        />
-      </div>
+        /> */}
+      {/* </div> */}
       {/* <div className="hero-container">
         <img src={mainBanner} alt="MainBanner" />
         <h2></h2>

@@ -2,16 +2,16 @@ import React from "react";
 import ReactAudioPlayer from "react-audio-player";
 import { Link } from "react-router-dom";
 import "../../styles/ServicesCard.css";
-import cc from "./ServiceCardImages/10.png";
-import ldl from "./ServiceCardImages/9.png";
-import wvr from "./ServiceCardImages/8.png";
-import tr from "./ServiceCardImages/7.png";
-import er from "./ServiceCardImages/6.png";
-import vr from "./ServiceCardImages/5.png";
-import cof from "./ServiceCardImages/4.png";
-import gpv from "./ServiceCardImages/3.png";
-import cr from "./ServiceCardImages/2.png";
-import lr from "./ServiceCardImages/1.png";
+import cc from "../UI/ServiceCardImages/10.png";
+import ldl from "../UI/ServiceCardImages/9.png";
+import wvr from "../UI/ServiceCardImages/8.png";
+import tr from "../UI/ServiceCardImages/7.png";
+import er from "../UI/ServiceCardImages/6.png";
+import vr from "../UI/ServiceCardImages/5.png";
+import cof from "../UI/ServiceCardImages/4.png";
+import gpv from "../UI/ServiceCardImages/3.png";
+import cr from "../UI/ServiceCardImages/2.png";
+import lr from "../UI/ServiceCardImages/1.png";
 
 import homecc from "../pages/audios/homeaudios/homecc.mp3";
 import homecof from "../pages/audios/homeaudios/homecof.mp3";
@@ -24,10 +24,10 @@ import hometr from "../pages/audios/homeaudios/hometr.mp3";
 import homevr from "../pages/audios/homeaudios/homevr.mp3";
 import homewvr from "../pages/audios/homeaudios/homewvr.mp3";
 
-export default function ServicesCard() {
+export default function serviceCard() {
   const myStyle = {
-    width: "18rem",
-    padding: "20%",
+    width: "15rem",
+    padding: "25%",
     overflow: "automatic",
     margin: "auto",
     borderRadius: 25,
@@ -41,12 +41,12 @@ export default function ServicesCard() {
   };
 
   return (
-    <div style={{ margin: "80px 0px" }}>
-      <h1 className="mt-5 mb-4" style={{ fontSize: 52 }}>
+    <div style={{ margin: "20px 0px" }}>
+      <h1 className="mt-3 mb-5" style={{ fontSize: 52 }}>
         ہماری خدمات
       </h1>
       <div className="d-flex justify-content-center pb-2 pt-2">
-        <Link style={cardStyle} to="services#id=a" className="card m-1 mx-2">
+        <Link style={cardStyle} to="service#id=a" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={cc}
@@ -68,11 +68,12 @@ export default function ServicesCard() {
               style={{ width: "100%" }}
               className="mt-1"
               controls
+              controlslist="nodownload, nofullscreen, noremoteplayback"
               src={homecc}
             />
           </div>
         </Link>
-        <Link style={cardStyle} to="services#id=b" className="card m-1 mx-2">
+        <Link style={cardStyle} to="service#id=b" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={gpv}
@@ -98,7 +99,7 @@ export default function ServicesCard() {
             />
           </div>
         </Link>
-        <Link style={cardStyle} to="services#id=c" className="card m-1 mx-2">
+        <Link style={cardStyle} to="service#id=c" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={ldl}
@@ -124,7 +125,7 @@ export default function ServicesCard() {
             />
           </div>
         </Link>
-        <Link style={cardStyle} to="services#id=h" className="card m-1 mx-2">
+        <Link style={cardStyle} to="service#id=h" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={er}
@@ -150,7 +151,7 @@ export default function ServicesCard() {
             />
           </div>
         </Link>
-        <Link style={cardStyle} to="services#id=n" className="card m-1 mx-2">
+        <Link style={cardStyle} to="service#id=n" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={cof}
@@ -178,7 +179,7 @@ export default function ServicesCard() {
         </Link>
       </div>
       <div className="d-flex justify-content-center">
-        <Link style={cardStyle} to="services#id=m" className="card m-1 mx-2">
+        <Link style={cardStyle} to="service#id=m" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={wvr}
@@ -204,7 +205,7 @@ export default function ServicesCard() {
             />
           </div>
         </Link>
-        <Link style={cardStyle} to="services#id=l" className="card m-1 mx-2">
+        <Link style={cardStyle} to="service#id=l" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={cr}
@@ -230,7 +231,7 @@ export default function ServicesCard() {
             />
           </div>
         </Link>
-        <Link style={cardStyle} to="services#id=k" className="card m-1 mx-2">
+        <Link style={cardStyle} to="service#id=k" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={lr}
@@ -256,7 +257,7 @@ export default function ServicesCard() {
             />
           </div>
         </Link>
-        <Link style={cardStyle} to="services#id=i" className="card m-1 mx-2">
+        <Link style={cardStyle} to="service#id=i" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={tr}
@@ -282,7 +283,7 @@ export default function ServicesCard() {
             />
           </div>
         </Link>
-        <Link style={cardStyle} to="services#id=j" className="card m-1 mx-2">
+        <Link style={cardStyle} to="service#id=j" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={vr}

@@ -3,6 +3,7 @@ import logo from "./logo.png";
 // import ReactAudioPlayer from "react-audio-player";
 import { Link, useLocation } from "react-router-dom";
 import "../../styles/Navbar.css";
+import navbaraudio from "../pages/audios/homeaudios/navbaraudio.mp3";
 import AudioButton from "./AudioButton";
 
 export default function Navbar() {
@@ -35,17 +36,12 @@ export default function Navbar() {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <AudioButton color="red" />
-                {/* <ReactAudioPlayer
-                  controls
-                  style={{
-                    height: "35px",
-                    width: "200px",
-                    marginRight: "5px",
-                    marginTop: "5px",
-                  }}
+                <AudioButton
                   src={navbaraudio}
-                /> */}
+                  color="red"
+                  width="45px"
+                  height="45px"
+                />
               </li>
               <li className="nav-item">
                 <Link
@@ -60,14 +56,23 @@ export default function Navbar() {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/services#id=a"
+                  to="/services"
+                  className={`btn btn-secondary mx-1 my-1  ${
+                    location.pathname === "/services" ? "active" : ""
+                  }`}
+                  aria-current="page"
+                >
+                  Services
+                </Link>
+                {/* <Link
+                  to="/service#id=a"
                   className={`btn btn-secondary mx-1 my-1  ${
                     location.pathname === "/services#id=a" ? "active" : ""
                   }`}
                   aria-current="page"
                 >
                   Services
-                </Link>
+                </Link> */}
               </li>
               <li className="nav-item">
                 <Link
