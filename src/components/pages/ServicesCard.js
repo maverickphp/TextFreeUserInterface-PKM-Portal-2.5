@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactAudioPlayer from "react-audio-player";
 import { Link } from "react-router-dom";
 import "../../styles/ServicesCard.css";
@@ -14,17 +14,17 @@ import cr from "../UI/ServiceCardImages/2.png";
 import lr from "../UI/ServiceCardImages/1.png";
 
 import homecc from "../pages/audios/homeaudios/homecc.mp3";
-import homecof from "../pages/audios/homeaudios/homecof.mp3";
-import homecr from "../pages/audios/homeaudios/homecr.mp3";
-import homeer from "../pages/audios/homeaudios/homeer.mp3";
-import homegpv from "../pages/audios/homeaudios/homegpv.mp3";
-import homeldl from "../pages/audios/homeaudios/homeldl.mp3";
-import homelr from "../pages/audios/homeaudios/homelr.mp3";
-import hometr from "../pages/audios/homeaudios/hometr.mp3";
-import homevr from "../pages/audios/homeaudios/homevr.mp3";
-import homewvr from "../pages/audios/homeaudios/homewvr.mp3";
+// import homecof from "../pages/audios/homeaudios/homecof.mp3";
+// import homecr from "../pages/audios/homeaudios/homecr.mp3";
+// import homeer from "../pages/audios/homeaudios/homeer.mp3";
+// import homegpv from "../pages/audios/homeaudios/homegpv.mp3";
+// import homeldl from "../pages/audios/homeaudios/homeldl.mp3";
+// import homelr from "../pages/audios/homeaudios/homelr.mp3";
+// import hometr from "../pages/audios/homeaudios/hometr.mp3";
+// import homevr from "../pages/audios/homeaudios/homevr.mp3";
+// import homewvr from "../pages/audios/homeaudios/homewvr.mp3";
 
-export default function serviceCard() {
+const ServicesCard = () => {
   const myStyle = {
     width: "15rem",
     padding: "10% 25%",
@@ -38,6 +38,20 @@ export default function serviceCard() {
     borderRadius: "5%",
     boxShadow: "30px 10px 50px 10px grey",
   };
+
+  useEffect(() => {
+    const audios = document.querySelectorAll("audio");
+    function pauseOtherAudios({ target }) {
+      for (const audio of audios) {
+        if (audio !== target) {
+          audio.pause();
+        }
+      }
+    }
+    for (const audio of audios) {
+      audio.addEventListener("play", pauseOtherAudios);
+    }
+  }, []);
 
   return (
     <>
@@ -76,9 +90,23 @@ export default function serviceCard() {
             مراکز &rarr;
           </Link>
         </div>
-        <h1 className="mt-3 mb-5" style={{ fontSize: 42 }}>
+        <h1 className="mt-3" style={{ fontSize: 42 }}>
           ہماری خدمات
         </h1>
+        <ReactAudioPlayer
+          style={{
+            padding: "5px",
+            marginBottom: "4px",
+            marginTop: "25px",
+            marginRight: "5px",
+            borderRadius: "250px",
+            height: "60px",
+            width: "110px",
+            backgroundColor: "black",
+          }}
+          src={homecc}
+          controls
+        />
         <div className="d-flex justify-content-center pb-2 pt-2">
           <Link style={cardStyle} to="/cc" className="card m-1 mx-2">
             <img
@@ -98,20 +126,6 @@ export default function serviceCard() {
               >
                 کریکٹر سرٹیفیکیٹ
               </h5>
-              <ReactAudioPlayer
-                style={{
-                  padding: "5px",
-                  marginBottom: "4px",
-                  marginRight: "5px",
-                  borderRadius: "250px",
-                  height: "60px",
-                  width: "110px",
-                  backgroundColor: "black",
-                }}
-                className="mt-1"
-                controls
-                src={homecc}
-              />
             </div>
           </Link>
           <Link style={cardStyle} to="/gpv" className="card m-1 mx-2">
@@ -132,20 +146,6 @@ export default function serviceCard() {
               >
                 جنرل پولیس کی تصدیق
               </h5>
-              <ReactAudioPlayer
-                style={{
-                  padding: "5px",
-                  marginBottom: "4px",
-                  marginRight: "5px",
-                  borderRadius: "250px",
-                  height: "60px",
-                  width: "110px",
-                  backgroundColor: "black",
-                }}
-                className="mt-1"
-                controls
-                src={homegpv}
-              />
             </div>
           </Link>
           <Link style={cardStyle} to="/ldl" className="card m-1 mx-2">
@@ -166,20 +166,6 @@ export default function serviceCard() {
               >
                 لرنر ڈرائیونگ لائسنس
               </h5>
-              <ReactAudioPlayer
-                style={{
-                  padding: "5px",
-                  marginBottom: "4px",
-                  marginRight: "5px",
-                  borderRadius: "250px",
-                  height: "60px",
-                  width: "110px",
-                  backgroundColor: "black",
-                }}
-                className="mt-1"
-                controls
-                src={homeldl}
-              />
             </div>
           </Link>
           <Link style={cardStyle} to="/er" className="card m-1 mx-2">
@@ -200,20 +186,6 @@ export default function serviceCard() {
               >
                 ملازمین کی رجسٹریشن
               </h5>
-              <ReactAudioPlayer
-                style={{
-                  padding: "5px",
-                  marginBottom: "4px",
-                  marginRight: "5px",
-                  borderRadius: "250px",
-                  height: "60px",
-                  width: "110px",
-                  backgroundColor: "black",
-                }}
-                className="mt-1"
-                controls
-                src={homeer}
-              />
             </div>
           </Link>
           <Link style={cardStyle} to="/cof" className="card m-1 mx-2">
@@ -234,20 +206,6 @@ export default function serviceCard() {
               >
                 ایف آئی آر کی کاپی
               </h5>
-              <ReactAudioPlayer
-                style={{
-                  padding: "5px",
-                  marginBottom: "4px",
-                  marginRight: "5px",
-                  borderRadius: "250px",
-                  height: "60px",
-                  width: "110px",
-                  backgroundColor: "black",
-                }}
-                className="mt-1"
-                controls
-                src={homecof}
-              />
             </div>
           </Link>
         </div>
@@ -270,20 +228,6 @@ export default function serviceCard() {
               >
                 خواتین پر تشدد کی رپورٹ
               </h5>
-              <ReactAudioPlayer
-                style={{
-                  padding: "5px",
-                  marginBottom: "4px",
-                  marginRight: "5px",
-                  borderRadius: "250px",
-                  height: "60px",
-                  width: "110px",
-                  backgroundColor: "black",
-                }}
-                className="mt-1"
-                controls
-                src={homewvr}
-              />
             </div>
           </Link>
           <Link style={cardStyle} to="/cr" className="card m-1 mx-2">
@@ -304,20 +248,6 @@ export default function serviceCard() {
               >
                 کرائم رپورٹ
               </h5>
-              <ReactAudioPlayer
-                style={{
-                  padding: "5px",
-                  marginBottom: "4px",
-                  marginRight: "5px",
-                  borderRadius: "250px",
-                  height: "60px",
-                  width: "110px",
-                  backgroundColor: "black",
-                }}
-                className="mt-1"
-                controls
-                src={homecr}
-              />
             </div>
           </Link>
           <Link style={cardStyle} to="/lr" className="card m-1 mx-2">
@@ -338,20 +268,6 @@ export default function serviceCard() {
               >
                 نقصان کی رپورٹ
               </h5>
-              <ReactAudioPlayer
-                style={{
-                  padding: "5px",
-                  marginBottom: "4px",
-                  marginRight: "5px",
-                  borderRadius: "250px",
-                  height: "60px",
-                  width: "110px",
-                  backgroundColor: "black",
-                }}
-                className="mt-1"
-                controls
-                src={homelr}
-              />
             </div>
           </Link>
           <Link style={cardStyle} to="/tr" className="card m-1 mx-2">
@@ -372,20 +288,6 @@ export default function serviceCard() {
               >
                 کرایہ داروں کی رجسٹریشن
               </h5>
-              <ReactAudioPlayer
-                style={{
-                  padding: "5px",
-                  marginBottom: "4px",
-                  marginRight: "5px",
-                  borderRadius: "250px",
-                  height: "60px",
-                  width: "110px",
-                  backgroundColor: "black",
-                }}
-                className="mt-1"
-                controls
-                src={hometr}
-              />
             </div>
           </Link>
           <Link style={cardStyle} to="/vv" className="card m-1 mx-2">
@@ -406,24 +308,12 @@ export default function serviceCard() {
               >
                 گاڑیوں کی رجسٹریشن
               </h5>
-              <ReactAudioPlayer
-                style={{
-                  padding: "5px",
-                  marginBottom: "4px",
-                  marginRight: "5px",
-                  borderRadius: "250px",
-                  height: "60px",
-                  width: "110px",
-                  backgroundColor: "black",
-                }}
-                className="mt-1"
-                controls
-                src={homevr}
-              />
             </div>
           </Link>
         </div>
       </div>
     </>
   );
-}
+};
+
+export default ServicesCard;
