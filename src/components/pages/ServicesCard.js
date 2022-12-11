@@ -27,22 +27,21 @@ import homewvr from "../pages/audios/homeaudios/homewvr.mp3";
 export default function serviceCard() {
   const myStyle = {
     width: "15rem",
-    padding: "25%",
+    padding: "10% 25%",
     overflow: "automatic",
     margin: "auto",
     borderRadius: 25,
   };
 
   const cardStyle = {
-    textDecoration: "none",
     color: "white",
     borderRadius: "5%",
-    boxShadow: "20px 20px 50px 10px grey",
+    boxShadow: "20px 30px 50px 10px grey",
   };
 
   return (
     <div style={{ margin: "20px 0px" }}>
-      <h1 className="mt-3 mb-5" style={{ fontSize: 52 }}>
+      <h1 className="mt-3 mb-4" style={{ fontSize: 42 }}>
         ہماری خدمات
       </h1>
       <div className="d-flex justify-content-center pb-2 pt-2">
@@ -68,7 +67,6 @@ export default function serviceCard() {
               style={{ width: "100%" }}
               className="mt-1"
               controls
-              controlslist="nodownload, nofullscreen, noremoteplayback"
               src={homecc}
             />
           </div>
