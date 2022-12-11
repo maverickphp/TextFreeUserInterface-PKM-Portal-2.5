@@ -40,354 +40,390 @@ export default function serviceCard() {
   };
 
   return (
-    <div style={{ margin: "20px 0px", marginBottom: "50px" }}>
-      <h1 className="mt-3 mb-5" style={{ fontSize: 42 }}>
-        ہماری خدمات
-      </h1>
-      <div className="d-flex justify-content-center pb-2 pt-2">
-        <Link style={cardStyle} to="/cc" className="card m-1 mx-2">
-          <img
-            style={myStyle}
-            src={cc}
-            className="card-img-top  img-thumbnail"
-            alt="Cardimg1"
-          />
-          <div className="card-body">
-            <h5
-              className="card-title"
-              style={{
-                backgroundColor: "blue",
-                padding: "15px",
-                borderRadius: "10px",
-              }}
-            >
-              کریکٹر سرٹیفیکیٹ
-            </h5>
-            <ReactAudioPlayer
-              style={{
-                padding: "5px",
-                marginBottom: "4px",
-                marginRight: "5px",
-                borderRadius: "250px",
-                height: "60px",
-                width: "110px",
-                backgroundColor: "black",
-              }}
-              className="mt-1"
-              controls
-              src={homecc}
+    <>
+      <div style={{ marginTop: "20px", marginBottom: "50px" }}>
+        <div
+          className="text-start d-flex p-2 justify-content-start"
+          style={{ top: 80, left: 0, position: "absolute" }}
+        >
+          <Link
+            to="/"
+            className="btn btn-warning text-center justify-content-center d-inline-flex p-2"
+            style={{
+              fontFamily: "Noto Nastaliq Urdu, serif",
+              fontSize: "32px",
+              marginLeft: "20px",
+              paddingBottom: "20px",
+            }}
+          >
+            &larr; واپس جائیے
+          </Link>
+        </div>
+        <div
+          className="text-end d-flex p-2 justify-content-end"
+          style={{ top: 80, right: 0, position: "absolute" }}
+        >
+          <Link
+            to="/centers"
+            className="btn btn-danger"
+            style={{
+              fontFamily: "Noto Nastaliq Urdu, serif",
+              fontSize: "32px",
+              marginLeft: "20px",
+              paddingBottom: "20px",
+            }}
+          >
+            مراکز &rarr;
+          </Link>
+        </div>
+        <h1 className="mt-3 mb-5" style={{ fontSize: 42 }}>
+          ہماری خدمات
+        </h1>
+        <div className="d-flex justify-content-center pb-2 pt-2">
+          <Link style={cardStyle} to="/cc" className="card m-1 mx-2">
+            <img
+              style={myStyle}
+              src={cc}
+              className="card-img-top  img-thumbnail"
+              alt="Cardimg1"
             />
-          </div>
-        </Link>
-        <Link style={cardStyle} to="/gpv" className="card m-1 mx-2">
-          <img
-            style={myStyle}
-            src={gpv}
-            className="card-img-top  img-thumbnail"
-            alt="Cardimg1"
-          />
-          <div className="card-body">
-            <h5
-              className="card-title"
-              style={{
-                backgroundColor: "green",
-                padding: "15px",
-                borderRadius: "10px",
-              }}
-            >
-              جنرل پولیس کی تصدیق
-            </h5>
-            <ReactAudioPlayer
-              style={{
-                padding: "5px",
-                marginBottom: "4px",
-                marginRight: "5px",
-                borderRadius: "250px",
-                height: "60px",
-                width: "110px",
-                backgroundColor: "black",
-              }}
-              className="mt-1"
-              controls
-              src={homegpv}
+            <div className="card-body">
+              <h5
+                className="card-title"
+                style={{
+                  backgroundColor: "blue",
+                  padding: "15px",
+                  borderRadius: "10px",
+                }}
+              >
+                کریکٹر سرٹیفیکیٹ
+              </h5>
+              <ReactAudioPlayer
+                style={{
+                  padding: "5px",
+                  marginBottom: "4px",
+                  marginRight: "5px",
+                  borderRadius: "250px",
+                  height: "60px",
+                  width: "110px",
+                  backgroundColor: "black",
+                }}
+                className="mt-1"
+                controls
+                src={homecc}
+              />
+            </div>
+          </Link>
+          <Link style={cardStyle} to="/gpv" className="card m-1 mx-2">
+            <img
+              style={myStyle}
+              src={gpv}
+              className="card-img-top  img-thumbnail"
+              alt="Cardimg1"
             />
-          </div>
-        </Link>
-        <Link style={cardStyle} to="/ldl" className="card m-1 mx-2">
-          <img
-            style={myStyle}
-            src={ldl}
-            className="card-img-top  img-thumbnail"
-            alt="Cardimg1"
-          />
-          <div className="card-body">
-            <h5
-              className="card-title"
-              style={{
-                backgroundColor: "red",
-                padding: "15px",
-                borderRadius: "10px",
-              }}
-            >
-              لرنر ڈرائیونگ لائسنس
-            </h5>
-            <ReactAudioPlayer
-              style={{
-                padding: "5px",
-                marginBottom: "4px",
-                marginRight: "5px",
-                borderRadius: "250px",
-                height: "60px",
-                width: "110px",
-                backgroundColor: "black",
-              }}
-              className="mt-1"
-              controls
-              src={homeldl}
+            <div className="card-body">
+              <h5
+                className="card-title"
+                style={{
+                  backgroundColor: "green",
+                  padding: "15px",
+                  borderRadius: "10px",
+                }}
+              >
+                جنرل پولیس کی تصدیق
+              </h5>
+              <ReactAudioPlayer
+                style={{
+                  padding: "5px",
+                  marginBottom: "4px",
+                  marginRight: "5px",
+                  borderRadius: "250px",
+                  height: "60px",
+                  width: "110px",
+                  backgroundColor: "black",
+                }}
+                className="mt-1"
+                controls
+                src={homegpv}
+              />
+            </div>
+          </Link>
+          <Link style={cardStyle} to="/ldl" className="card m-1 mx-2">
+            <img
+              style={myStyle}
+              src={ldl}
+              className="card-img-top  img-thumbnail"
+              alt="Cardimg1"
             />
-          </div>
-        </Link>
-        <Link style={cardStyle} to="/er" className="card m-1 mx-2">
-          <img
-            style={myStyle}
-            src={er}
-            className="card-img-top  img-thumbnail"
-            alt="Cardimg1"
-          />
-          <div className="card-body">
-            <h5
-              className="card-title"
-              style={{
-                backgroundColor: "#E9967A", //peach color
-                padding: "15px",
-                borderRadius: "10px",
-              }}
-            >
-              ملازمین کی رجسٹریشن
-            </h5>
-            <ReactAudioPlayer
-              style={{
-                padding: "5px",
-                marginBottom: "4px",
-                marginRight: "5px",
-                borderRadius: "250px",
-                height: "60px",
-                width: "110px",
-                backgroundColor: "black",
-              }}
-              className="mt-1"
-              controls
-              src={homeer}
+            <div className="card-body">
+              <h5
+                className="card-title"
+                style={{
+                  backgroundColor: "red",
+                  padding: "15px",
+                  borderRadius: "10px",
+                }}
+              >
+                لرنر ڈرائیونگ لائسنس
+              </h5>
+              <ReactAudioPlayer
+                style={{
+                  padding: "5px",
+                  marginBottom: "4px",
+                  marginRight: "5px",
+                  borderRadius: "250px",
+                  height: "60px",
+                  width: "110px",
+                  backgroundColor: "black",
+                }}
+                className="mt-1"
+                controls
+                src={homeldl}
+              />
+            </div>
+          </Link>
+          <Link style={cardStyle} to="/er" className="card m-1 mx-2">
+            <img
+              style={myStyle}
+              src={er}
+              className="card-img-top  img-thumbnail"
+              alt="Cardimg1"
             />
-          </div>
-        </Link>
-        <Link style={cardStyle} to="/cof" className="card m-1 mx-2">
-          <img
-            style={myStyle}
-            src={cof}
-            className="card-img-top  img-thumbnail"
-            alt="Cardimg1"
-          />
-          <div className="card-body">
-            <h5
-              className="card-title"
-              style={{
-                backgroundColor: "orange",
-                padding: "15px",
-                borderRadius: "10px",
-              }}
-            >
-              ایف آئی آر کی کاپی
-            </h5>
-            <ReactAudioPlayer
-              style={{
-                padding: "5px",
-                marginBottom: "4px",
-                marginRight: "5px",
-                borderRadius: "250px",
-                height: "60px",
-                width: "110px",
-                backgroundColor: "black",
-              }}
-              className="mt-1"
-              controls
-              src={homecof}
+            <div className="card-body">
+              <h5
+                className="card-title"
+                style={{
+                  backgroundColor: "#E9967A", //peach color
+                  padding: "15px",
+                  borderRadius: "10px",
+                }}
+              >
+                ملازمین کی رجسٹریشن
+              </h5>
+              <ReactAudioPlayer
+                style={{
+                  padding: "5px",
+                  marginBottom: "4px",
+                  marginRight: "5px",
+                  borderRadius: "250px",
+                  height: "60px",
+                  width: "110px",
+                  backgroundColor: "black",
+                }}
+                className="mt-1"
+                controls
+                src={homeer}
+              />
+            </div>
+          </Link>
+          <Link style={cardStyle} to="/cof" className="card m-1 mx-2">
+            <img
+              style={myStyle}
+              src={cof}
+              className="card-img-top  img-thumbnail"
+              alt="Cardimg1"
             />
-          </div>
-        </Link>
+            <div className="card-body">
+              <h5
+                className="card-title"
+                style={{
+                  backgroundColor: "orange",
+                  padding: "15px",
+                  borderRadius: "10px",
+                }}
+              >
+                ایف آئی آر کی کاپی
+              </h5>
+              <ReactAudioPlayer
+                style={{
+                  padding: "5px",
+                  marginBottom: "4px",
+                  marginRight: "5px",
+                  borderRadius: "250px",
+                  height: "60px",
+                  width: "110px",
+                  backgroundColor: "black",
+                }}
+                className="mt-1"
+                controls
+                src={homecof}
+              />
+            </div>
+          </Link>
+        </div>
+        <div className="d-flex justify-content-center">
+          <Link style={cardStyle} to="/wvr" className="card m-1 mx-2">
+            <img
+              style={myStyle}
+              src={wvr}
+              className="card-img-top  img-thumbnail"
+              alt="Cardimg1"
+            />
+            <div className="card-body">
+              <h5
+                className="card-title"
+                style={{
+                  backgroundColor: "pink",
+                  padding: "15px",
+                  borderRadius: "10px",
+                }}
+              >
+                خواتین پر تشدد کی رپورٹ
+              </h5>
+              <ReactAudioPlayer
+                style={{
+                  padding: "5px",
+                  marginBottom: "4px",
+                  marginRight: "5px",
+                  borderRadius: "250px",
+                  height: "60px",
+                  width: "110px",
+                  backgroundColor: "black",
+                }}
+                className="mt-1"
+                controls
+                src={homewvr}
+              />
+            </div>
+          </Link>
+          <Link style={cardStyle} to="/cr" className="card m-1 mx-2">
+            <img
+              style={myStyle}
+              src={cr}
+              className="card-img-top  img-thumbnail"
+              alt="Cardimg1"
+            />
+            <div className="card-body">
+              <h5
+                className="card-title"
+                style={{
+                  backgroundColor: "purple",
+                  padding: "15px",
+                  borderRadius: "10px",
+                }}
+              >
+                کرائم رپورٹ
+              </h5>
+              <ReactAudioPlayer
+                style={{
+                  padding: "5px",
+                  marginBottom: "4px",
+                  marginRight: "5px",
+                  borderRadius: "250px",
+                  height: "60px",
+                  width: "110px",
+                  backgroundColor: "black",
+                }}
+                className="mt-1"
+                controls
+                src={homecr}
+              />
+            </div>
+          </Link>
+          <Link style={cardStyle} to="/lr" className="card m-1 mx-2">
+            <img
+              style={myStyle}
+              src={lr}
+              className="card-img-top  img-thumbnail"
+              alt="Cardimg1"
+            />
+            <div className="card-body">
+              <h5
+                className="card-title"
+                style={{
+                  backgroundColor: "black",
+                  padding: "15px",
+                  borderRadius: "10px",
+                }}
+              >
+                نقصان کی رپورٹ
+              </h5>
+              <ReactAudioPlayer
+                style={{
+                  padding: "5px",
+                  marginBottom: "4px",
+                  marginRight: "5px",
+                  borderRadius: "250px",
+                  height: "60px",
+                  width: "110px",
+                  backgroundColor: "black",
+                }}
+                className="mt-1"
+                controls
+                src={homelr}
+              />
+            </div>
+          </Link>
+          <Link style={cardStyle} to="/tr" className="card m-1 mx-2">
+            <img
+              style={myStyle}
+              src={tr}
+              className="card-img-top  img-thumbnail"
+              alt="Cardimg1"
+            />
+            <div className="card-body">
+              <h5
+                className="card-title"
+                style={{
+                  backgroundColor: "grey",
+                  padding: "15px",
+                  borderRadius: "10px",
+                }}
+              >
+                کرایہ داروں کی رجسٹریشن
+              </h5>
+              <ReactAudioPlayer
+                style={{
+                  padding: "5px",
+                  marginBottom: "4px",
+                  marginRight: "5px",
+                  borderRadius: "250px",
+                  height: "60px",
+                  width: "110px",
+                  backgroundColor: "black",
+                }}
+                className="mt-1"
+                controls
+                src={hometr}
+              />
+            </div>
+          </Link>
+          <Link style={cardStyle} to="/vv" className="card m-1 mx-2">
+            <img
+              style={myStyle}
+              src={vv}
+              className="card-img-top  img-thumbnail"
+              alt="Cardimg1"
+            />
+            <div className="card-body">
+              <h5
+                className="card-title"
+                style={{
+                  backgroundColor: "gold",
+                  padding: "15px",
+                  borderRadius: "10px",
+                }}
+              >
+                گاڑیوں کی رجسٹریشن
+              </h5>
+              <ReactAudioPlayer
+                style={{
+                  padding: "5px",
+                  marginBottom: "4px",
+                  marginRight: "5px",
+                  borderRadius: "250px",
+                  height: "60px",
+                  width: "110px",
+                  backgroundColor: "black",
+                }}
+                className="mt-1"
+                controls
+                src={homevr}
+              />
+            </div>
+          </Link>
+        </div>
       </div>
-      <div className="d-flex justify-content-center">
-        <Link style={cardStyle} to="/wvr" className="card m-1 mx-2">
-          <img
-            style={myStyle}
-            src={wvr}
-            className="card-img-top  img-thumbnail"
-            alt="Cardimg1"
-          />
-          <div className="card-body">
-            <h5
-              className="card-title"
-              style={{
-                backgroundColor: "pink",
-                padding: "15px",
-                borderRadius: "10px",
-              }}
-            >
-              خواتین پر تشدد کی رپورٹ
-            </h5>
-            <ReactAudioPlayer
-              style={{
-                padding: "5px",
-                marginBottom: "4px",
-                marginRight: "5px",
-                borderRadius: "250px",
-                height: "60px",
-                width: "110px",
-                backgroundColor: "black",
-              }}
-              className="mt-1"
-              controls
-              src={homewvr}
-            />
-          </div>
-        </Link>
-        <Link style={cardStyle} to="/cr" className="card m-1 mx-2">
-          <img
-            style={myStyle}
-            src={cr}
-            className="card-img-top  img-thumbnail"
-            alt="Cardimg1"
-          />
-          <div className="card-body">
-            <h5
-              className="card-title"
-              style={{
-                backgroundColor: "purple",
-                padding: "15px",
-                borderRadius: "10px",
-              }}
-            >
-              کرائم رپورٹ
-            </h5>
-            <ReactAudioPlayer
-              style={{
-                padding: "5px",
-                marginBottom: "4px",
-                marginRight: "5px",
-                borderRadius: "250px",
-                height: "60px",
-                width: "110px",
-                backgroundColor: "black",
-              }}
-              className="mt-1"
-              controls
-              src={homecr}
-            />
-          </div>
-        </Link>
-        <Link style={cardStyle} to="/lr" className="card m-1 mx-2">
-          <img
-            style={myStyle}
-            src={lr}
-            className="card-img-top  img-thumbnail"
-            alt="Cardimg1"
-          />
-          <div className="card-body">
-            <h5
-              className="card-title"
-              style={{
-                backgroundColor: "black",
-                padding: "15px",
-                borderRadius: "10px",
-              }}
-            >
-              نقصان کی رپورٹ
-            </h5>
-            <ReactAudioPlayer
-              style={{
-                padding: "5px",
-                marginBottom: "4px",
-                marginRight: "5px",
-                borderRadius: "250px",
-                height: "60px",
-                width: "110px",
-                backgroundColor: "black",
-              }}
-              className="mt-1"
-              controls
-              src={homelr}
-            />
-          </div>
-        </Link>
-        <Link style={cardStyle} to="/tr" className="card m-1 mx-2">
-          <img
-            style={myStyle}
-            src={tr}
-            className="card-img-top  img-thumbnail"
-            alt="Cardimg1"
-          />
-          <div className="card-body">
-            <h5
-              className="card-title"
-              style={{
-                backgroundColor: "grey",
-                padding: "15px",
-                borderRadius: "10px",
-              }}
-            >
-              کرایہ داروں کی رجسٹریشن
-            </h5>
-            <ReactAudioPlayer
-              style={{
-                padding: "5px",
-                marginBottom: "4px",
-                marginRight: "5px",
-                borderRadius: "250px",
-                height: "60px",
-                width: "110px",
-                backgroundColor: "black",
-              }}
-              className="mt-1"
-              controls
-              src={hometr}
-            />
-          </div>
-        </Link>
-        <Link style={cardStyle} to="/vv" className="card m-1 mx-2">
-          <img
-            style={myStyle}
-            src={vv}
-            className="card-img-top  img-thumbnail"
-            alt="Cardimg1"
-          />
-          <div className="card-body">
-            <h5
-              className="card-title"
-              style={{
-                backgroundColor: "gold",
-                padding: "15px",
-                borderRadius: "10px",
-              }}
-            >
-              گاڑیوں کی رجسٹریشن
-            </h5>
-            <ReactAudioPlayer
-              style={{
-                padding: "5px",
-                marginBottom: "4px",
-                marginRight: "5px",
-                borderRadius: "250px",
-                height: "60px",
-                width: "110px",
-                backgroundColor: "black",
-              }}
-              className="mt-1"
-              controls
-              src={homevr}
-            />
-          </div>
-        </Link>
-      </div>
-    </div>
+    </>
   );
 }
