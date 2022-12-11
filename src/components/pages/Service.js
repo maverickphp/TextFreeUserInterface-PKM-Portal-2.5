@@ -78,7 +78,7 @@ export default function Services(props) {
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 1:</h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
@@ -97,7 +97,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 2:</h2>
                 <img className="img-fluid" src={ccstep2} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -109,7 +109,7 @@ export default function Services(props) {
               </div>
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 3:</h2>
                 <img className="img-fluid" src={ccstep3} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -119,7 +119,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 4:</h2>
                 <img
                   className="img-fluid"
@@ -145,7 +145,7 @@ export default function Services(props) {
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 1:</h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
@@ -163,7 +163,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 2:</h2>
                 <img className="img-fluid" src={gpvstep2} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -175,7 +175,7 @@ export default function Services(props) {
               </div>
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 3:</h2>
                 <img className="img-fluid" src={gpvstep3} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -185,7 +185,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 4:</h2>
                 <img
                   className="img-fluid"
@@ -211,7 +211,7 @@ export default function Services(props) {
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 1:</h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
@@ -229,7 +229,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 2:</h2>
                 <img className="img-fluid" src={ldlstep2} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -241,7 +241,7 @@ export default function Services(props) {
               </div>
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 3:</h2>
                 <img className="img-fluid" src={ldlstep3} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -251,7 +251,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 4:</h2>
                 <img className="img-fluid" src={handstep4} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -274,7 +274,7 @@ export default function Services(props) {
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 1:</h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
@@ -292,7 +292,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 2:</h2>
                 <img className="img-fluid" src={erstep2} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -304,7 +304,7 @@ export default function Services(props) {
               </div>
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 3:</h2>
                 <img className="img-fluid" src={freestep3} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -314,7 +314,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 4:</h2>
                 <img className="img-fluid" src={handstep4} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -336,7 +336,7 @@ export default function Services(props) {
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 1:</h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
@@ -354,7 +354,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 2:</h2>
                 <img className="img-fluid" src={trstep2} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -366,7 +366,7 @@ export default function Services(props) {
               </div>
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 3:</h2>
                 <img className="img-fluid" src={freestep3} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -376,7 +376,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 4:</h2>
                 <img className="img-fluid" src={handstep4} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -398,7 +398,7 @@ export default function Services(props) {
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 1:</h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
@@ -416,7 +416,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 2:</h2>
                 <img className="img-fluid" src={vvstep2} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -428,7 +428,7 @@ export default function Services(props) {
               </div>
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 3:</h2>
                 <img className="img-fluid" src={vvstep3} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -438,7 +438,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 4:</h2>
                 <img className="img-fluid" src={handstep4} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -460,7 +460,7 @@ export default function Services(props) {
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 1:</h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
@@ -478,7 +478,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 2:</h2>
                 <img className="img-fluid" src={lrstep2} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -490,7 +490,7 @@ export default function Services(props) {
               </div>
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 3:</h2>
                 <img className="img-fluid" src={freestep3} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -500,7 +500,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 4:</h2>
                 <img className="img-fluid" src={handstep4} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -522,7 +522,7 @@ export default function Services(props) {
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 1:</h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
@@ -540,7 +540,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 2:</h2>
                 <img className="img-fluid" src={crstep2} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -552,7 +552,7 @@ export default function Services(props) {
               </div>
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 3:</h2>
                 <img className="img-fluid" src={freestep3} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -562,7 +562,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 4:</h2>
                 <img className="img-fluid" src={handstep4} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -584,7 +584,7 @@ export default function Services(props) {
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 1:</h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
@@ -602,7 +602,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 2:</h2>
                 <img className="img-fluid" src={wvrstep2} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -614,7 +614,7 @@ export default function Services(props) {
               </div>
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 3:</h2>
                 <img className="img-fluid" src={freestep3} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -624,7 +624,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 4:</h2>
                 <img className="img-fluid" src={handstep4} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -646,7 +646,7 @@ export default function Services(props) {
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 1:</h2>
                 <img className="img-fluid" src={step1} alt="stepsimage" />
                 <Link
@@ -664,7 +664,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 2:</h2>
                 <img className="img-fluid" src={cofstep2} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -676,7 +676,7 @@ export default function Services(props) {
               </div>
             </div>
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-              <div className="col-5">
+              <div className="col-6">
                 <h2 className="text-start">Step 3:</h2>
                 <img className="img-fluid" src={freestep3} alt="stepsimage" />
                 <ReactAudioPlayer
@@ -686,7 +686,7 @@ export default function Services(props) {
                   controls
                 />
               </div>
-              <div className="col-5" style={{ marginLeft: "20px" }}>
+              <div className="col-6" style={{ marginLeft: "20px" }}>
                 <h2 className="text-start">Step 4:</h2>
                 <img
                   {...props.changeProgress(100)}
