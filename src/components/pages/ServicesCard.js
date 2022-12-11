@@ -45,7 +45,7 @@ export default function serviceCard() {
         ہماری خدمات
       </h1>
       <div className="d-flex justify-content-center pb-2 pt-2">
-        <Link style={cardStyle} to="service#id=a" className="card m-1 mx-2">
+        <Link style={cardStyle} to="cc.js" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={cc}
@@ -124,7 +124,7 @@ export default function serviceCard() {
             <h5
               className="card-title"
               style={{
-                backgroundColor: "violet",
+                backgroundColor: "red",
                 padding: "15px",
                 borderRadius: "10px",
               }}
@@ -158,7 +158,7 @@ export default function serviceCard() {
             <h5
               className="card-title"
               style={{
-                backgroundColor: "indigo",
+                backgroundColor: "#E9967A",  //peach color
                 padding: "15px",
                 borderRadius: "10px",
               }}
@@ -262,7 +262,7 @@ export default function serviceCard() {
             <h5
               className="card-title"
               style={{
-                backgroundColor: "magenta",
+                backgroundColor: "purple",
                 padding: "15px",
                 borderRadius: "10px",
               }}
