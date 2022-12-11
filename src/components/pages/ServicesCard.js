@@ -104,6 +104,8 @@ const ServicesCard = () => {
             width: "110px",
             backgroundColor: "black",
           }}
+          loop="true"
+          autoPlay
           src={homecc}
           controls
         />

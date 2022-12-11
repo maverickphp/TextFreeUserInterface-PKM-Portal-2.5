@@ -16,6 +16,7 @@ function HeroSection() {
               src={homeaudio}
               autoPlay
               controls
+              loop="true"
               style={{
                 padding: "5px",
                 marginLeft: "100px",
