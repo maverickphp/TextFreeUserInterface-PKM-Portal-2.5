@@ -45,7 +45,7 @@ export default function serviceCard() {
         ہماری خدمات
       </h1>
       <div className="d-flex justify-content-center pb-2 pt-2">
-        <Link style={cardStyle} to="cc.js" className="card m-1 mx-2">
+        <Link style={cardStyle} to="/cc" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={cc}
@@ -79,7 +79,7 @@ export default function serviceCard() {
             />
           </div>
         </Link>
-        <Link style={cardStyle} to="service#id=b" className="card m-1 mx-2">
+        <Link style={cardStyle} to="/gpv" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={gpv}

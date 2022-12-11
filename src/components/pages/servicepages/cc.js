@@ -4,21 +4,21 @@ import ReactAudioPlayer from "react-audio-player";
 import Col from "react-bootstrap/Col";
 import Tab from "react-bootstrap/Tab";
 
-import cci from "./audios/serviceaudios/cci.mp3";
+import cci from "../audios/serviceaudios/cci.mp3";
 
 
-import step3 from "./audios/stepsaudios/step3.mp3";
+import step3 from "../audios/stepsaudios/step3.mp3";
 
-import bycourierstep4 from "./audios/stepsaudios/bycourierstep4.mp3";
+import bycourierstep4 from "../audios/stepsaudios/bycourierstep4.mp3";
 
-import ccstep1 from "./audios/stepsaudios/ccstep1.mp3";
+import ccstep1 from "../audios/stepsaudios/ccstep1.mp3";
 
-import step1 from "../UI/ServicesImages/step1.png";
-import ccstep3 from "../UI/ServicesImages/ccstep3.png";
-import ccstep2 from "../UI/ServicesImages/ccstep2.png";
+import step1 from "../../UI/ServicesImages/step1.png";
+import ccstep3 from "../../UI/ServicesImages/ccstep3.png";
+import ccstep2 from "../../UI/ServicesImages/ccstep2.png";
 
 
-import courierstep4 from "../UI/ServicesImages/courierstep4.png";
+import courierstep4 from "../../UI/ServicesImages/courierstep4.png";
 
 
 export default function Services(props) {
@@ -45,7 +45,6 @@ export default function Services(props) {
     >
       <Col sm={12}>
         <Tab.Content className="col-10" style={myStyle}>
-          <Tab.Pane eventKey="#id=a">
             <h2>کریکٹر سرٹیفکیٹ کا تعارف</h2>
             <ReactAudioPlayer
               style={{
@@ -159,7 +158,6 @@ export default function Services(props) {
                 />
               </div>
             </div>
-          </Tab.Pane>
         </Tab.Content>
       </Col>
     </Tab.Container>
