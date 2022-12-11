@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: left;
   font-family: "Poppins", sans-serif;
-  height: 90vh;
+  height: 86vh;
   width: 100%;
 }
 .hero .overlay {
@@ -21,8 +21,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
-  width: 70vw;
+  height: 95vh;
+  width: 60vw;
   margin: auto;
   transform-origin: left;
   -webkit-animation: reveal 1s ease-in-out forwards;
