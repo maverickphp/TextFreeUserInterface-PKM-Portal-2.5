@@ -7,7 +7,7 @@ import ldl from "../UI/ServiceCardImages/9.png";
 import wvr from "../UI/ServiceCardImages/8.png";
 import tr from "../UI/ServiceCardImages/7.png";
 import er from "../UI/ServiceCardImages/6.png";
-import vr from "../UI/ServiceCardImages/5.png";
+import vv from "../UI/ServiceCardImages/5.png";
 import cof from "../UI/ServiceCardImages/4.png";
 import gpv from "../UI/ServiceCardImages/3.png";
 import cr from "../UI/ServiceCardImages/2.png";
@@ -113,7 +113,7 @@ export default function serviceCard() {
             />
           </div>
         </Link>
-        <Link style={cardStyle} to="service#id=c" className="card m-1 mx-2">
+        <Link style={cardStyle} to="/ldl" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={ldl}
@@ -147,7 +147,7 @@ export default function serviceCard() {
             />
           </div>
         </Link>
-        <Link style={cardStyle} to="service#id=h" className="card m-1 mx-2">
+        <Link style={cardStyle} to="/er" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={er}
@@ -181,7 +181,7 @@ export default function serviceCard() {
             />
           </div>
         </Link>
-        <Link style={cardStyle} to="service#id=n" className="card m-1 mx-2">
+        <Link style={cardStyle} to="/cof" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={cof}
@@ -217,7 +217,7 @@ export default function serviceCard() {
         </Link>
       </div>
       <div className="d-flex justify-content-center">
-        <Link style={cardStyle} to="service#id=m" className="card m-1 mx-2">
+        <Link style={cardStyle} to="/wvr" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={wvr}
@@ -251,7 +251,7 @@ export default function serviceCard() {
             />
           </div>
         </Link>
-        <Link style={cardStyle} to="service#id=l" className="card m-1 mx-2">
+        <Link style={cardStyle} to="/cr" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={cr}
@@ -285,7 +285,7 @@ export default function serviceCard() {
             />
           </div>
         </Link>
-        <Link style={cardStyle} to="service#id=k" className="card m-1 mx-2">
+        <Link style={cardStyle} to="/lr" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={lr}
@@ -319,7 +319,7 @@ export default function serviceCard() {
             />
           </div>
         </Link>
-        <Link style={cardStyle} to="service#id=i" className="card m-1 mx-2">
+        <Link style={cardStyle} to="/tr" className="card m-1 mx-2">
           <img
             style={myStyle}
             src={tr}
@@ -353,10 +353,10 @@ export default function serviceCard() {
             />
           </div>
         </Link>
-        <Link style={cardStyle} to="service#id=j" className="card m-1 mx-2">
+        <Link style={cardStyle} to="/vv" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src={vr}
+            src={vv}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />

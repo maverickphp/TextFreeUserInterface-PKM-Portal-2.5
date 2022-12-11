@@ -11,6 +11,15 @@ import Services from "./components/pages/ServicesCard";
 import Service from "./components/pages/Service";
 import CC from "./components/pages/servicepages/cc";
 import GPV from "./components/pages/servicepages/gpv";
+import COF from "./components/pages/servicepages/cof";
+import ER from "./components/pages/servicepages/er";
+import CR from "./components/pages/servicepages/cr";
+import LDL from "./components/pages/servicepages/ldl";
+import LR from "./components/pages/servicepages/lr";
+import TR from "./components/pages/servicepages/tr";
+import VV from "./components/pages/servicepages/vv";
+import WVR from "./components/pages/servicepages/wvr";
+
 import LoadingBar from "react-top-loading-bar";
 import PageNotFound from "./components/pages/Error404";
 
@@ -50,6 +59,38 @@ export default function App() {
             <Route
               path="gpv"
               element={<GPV changeProgress={changeProgress} link={link} />}
+            />
+             <Route
+              path="cof"
+              element={<COF changeProgress={changeProgress} link={link} />}
+            />
+             <Route
+              path="cr"
+              element={<CR changeProgress={changeProgress} link={link} />}
+            />
+             <Route
+              path="er"
+              element={<ER changeProgress={changeProgress} link={link} />}
+            />
+             <Route
+              path="ldl"
+              element={<LDL changeProgress={changeProgress} link={link} />}
+            />
+             <Route
+              path="lr"
+              element={<LR changeProgress={changeProgress} link={link} />}
+            />
+             <Route
+              path="tr"
+              element={<TR changeProgress={changeProgress} link={link} />}
+            />
+             <Route
+              path="vv"
+              element={<VV changeProgress={changeProgress} link={link} />}
+            />
+             <Route
+              path="wvr"
+              element={<WVR changeProgress={changeProgress} link={link} />}
             />
             <Route
               path="services/service"

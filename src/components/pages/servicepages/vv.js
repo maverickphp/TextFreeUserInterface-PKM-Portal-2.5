@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Tab from "react-bootstrap/Tab";
 
 
-import ldl from "../audios/serviceaudios/ldl.mp3";
+import vv from "../audios/serviceaudios/vv.mp3";
 
 
 import step3 from "../audios/stepsaudios/step3.mp3";
@@ -14,17 +14,18 @@ import byhandstep4 from "../audios/stepsaudios/byhandstep4.mp3";
 
 
 
-import ldlstep1 from "../audios/stepsaudios/ldlstep1.mp3";
+import vvstep1 from "../audios/stepsaudios/vvstep1.mp3";
 
 
 import step1 from "../../UI/ServicesImages/step1.png";
 
 
-import ldlstep3 from "../../UI/ServicesImages/ldlstep3.png";
+import vvstep3 from "../../UI/ServicesImages/vvstep3.png";
 
 
 
-import ldlstep2 from "../../UI/ServicesImages/ldlstep2.png";
+import vvstep2 from "../../UI/ServicesImages/vvstep2.png";
+
 
 
 import handstep4 from "../../UI/ServicesImages/handstep4.png";
@@ -53,8 +54,7 @@ export default function Services(props) {
     >
       <Col sm={12}>
         <Tab.Content className="col-10" style={myStyle}>
-            <h2>لرنر ڈرائیونگ لائسنس کا تعارف</h2>
-
+            <h2>گاڑی کی تصدیق</h2>
             <ReactAudioPlayer
               style={{
                 padding: "5px",
@@ -66,7 +66,7 @@ export default function Services(props) {
                 backgroundColor: "black",
               }}
               className="mt-3"
-              src={ldl}
+              src={vv}
               controls
             />
             <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
@@ -94,7 +94,7 @@ export default function Services(props) {
                     backgroundColor: "black",
                   }}
                   className="mt-3"
-                  src={ldlstep1}
+                  src={vvstep1}
                   controls
                 />
               </div>
@@ -102,7 +102,7 @@ export default function Services(props) {
                 <h2 className="mb-3 mt-2 text-center" style={textStyle}>
                   2
                 </h2>
-                <img className="img-fluid" src={ldlstep2} alt="stepsimage" />
+                <img className="img-fluid" src={vvstep2} alt="stepsimage" />
                 <ReactAudioPlayer
                   style={{
                     padding: "5px",
@@ -114,7 +114,7 @@ export default function Services(props) {
                     backgroundColor: "black",
                   }}
                   className="mt-3"
-                  src={ldl}
+                  src={vv}
                   controls
                 />
               </div>
@@ -124,7 +124,7 @@ export default function Services(props) {
                 <h2 className="mb-3 mt-2 text-center" style={textStyle}>
                   3
                 </h2>
-                <img className="img-fluid" src={ldlstep3} alt="stepsimage" />
+                <img className="img-fluid" src={vvstep3} alt="stepsimage" />
                 <ReactAudioPlayer
                   style={{
                     padding: "5px",
