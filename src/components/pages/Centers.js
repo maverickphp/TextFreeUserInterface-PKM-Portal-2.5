@@ -41,6 +41,7 @@ import sialkotsound from "../pages/audios/centersaudios/sialkot.mp3";
 import tobateksinghsound from "../pages/audios/centersaudios/tobateksingh.mp3";
 import veharisound from "../pages/audios/centersaudios/vehari.mp3";
 
+import centersmainaudio from "../pages/audios/centersaudios/centersmainaudio.mp3";
 
 import CenterCards from "../UI/CenterCards";
 import attock from "..//UI//CenterCardsImages//attock.jpg";
@@ -81,8 +82,24 @@ import tobateksingh from "..//UI//CenterCardsImages//tobateksingh.jpg";
 import vehari from "..//UI//CenterCardsImages//vehari.jpg";
 import ReactAudioPlayer from "react-audio-player";
 
-function Centers(props) {
+import { useEffect } from "react";
+
+const Centers = (props) => {
   document.title = "PKM Punjab - Our Centers";
+
+  useEffect(() => {
+    const audios = document.querySelectorAll("audio");
+    function pauseOtherAudios({ target }) {
+      for (const audio of audios) {
+        if (audio !== target) {
+          audio.pause();
+        }
+      }
+    }
+    for (const audio of audios) {
+      audio.addEventListener("play", pauseOtherAudios);
+    }
+  }, []);
   return (
     <>
       <div
@@ -135,7 +152,7 @@ function Centers(props) {
             backgroundColor: "black",
           }}
           className="mt-4"
-          // src={}
+          src={centersmainaudio}
           autoPlay
           loop="true"
           controls
@@ -474,6 +491,6 @@ function Centers(props) {
       </Tab.Container>
     </>
   );
-}
+};
 
 export default Centers;
