@@ -27,7 +27,7 @@ import courierstep4 from "../../UI/ServicesImages/courierstep4.png";
 const Services = (props) => {
   document.title = "PKM Punjab - Our Services";
   const myStyle = {
-    padding: "50px 0px",
+    padding: "80px 0px",
     justifyContent: "center",
     margin: "auto",
   };
