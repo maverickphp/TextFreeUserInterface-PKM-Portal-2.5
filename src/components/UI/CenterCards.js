@@ -30,9 +30,9 @@ export default function CenterCards(props) {
               <div className="postcard__bar"></div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <Link to="/contact" target="noblank">
+                  <a href="https://youtu.be/EdDm9iURWlc" target="noblank">
                     <i className="fa fa-envelope-o mx-1 my-1"></i>Email
-                  </Link>
+                  </a>
                 </li>
                 <li className="tag__item">
                   <a href={props.phone}>

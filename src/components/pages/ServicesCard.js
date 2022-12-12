@@ -13,7 +13,7 @@ import gpv from "../UI/ServiceCardImages/3.png";
 import cr from "../UI/ServiceCardImages/2.png";
 import lr from "../UI/ServiceCardImages/1.png";
 
-import homecc from "../pages/audios/homeaudios/homecc.mp3";
+import servicecard from "../pages/audios/serviceaudios/servicecard.mp3";
 // import homecof from "../pages/audios/homeaudios/homecof.mp3";
 // import homecr from "../pages/audios/homeaudios/homecr.mp3";
 // import homeer from "../pages/audios/homeaudios/homeer.mp3";
@@ -106,7 +106,7 @@ const ServicesCard = () => {
           }}
           loop="true"
           autoPlay
-          src={homecc}
+          src={servicecard}
           controls
         />
         <div className="d-flex justify-content-center pb-2 pt-2">
