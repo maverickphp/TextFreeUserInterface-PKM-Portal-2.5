@@ -1,12 +1,15 @@
 import React from "react";
 import "../../styles/CenterCards.css";
 import { Link } from "react-router-dom";
+import useSound from "use-sound";
+
 
 export default function CenterCards(props) {
+  const [play, { stop }] = useSound(props.sound);
   return (
     <>
-      <section className="light">
-        <div className="container py-2">
+      <section onMouseEnter={() => play()} onMouseLeave={() => stop()}>
+        <div className="container">
           <div className="h1 text-center text-dark" id="pageHeaderTitle"></div>
 
           <article className="postcard light blue">
@@ -30,6 +33,7 @@ export default function CenterCards(props) {
               <div className="postcard__bar"></div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
+<<<<<<< HEAD
                   <a href="https://youtu.be/EdDm9iURWlc" target="noblank">
                     <i className="fa fa-envelope-o mx-1 my-1"></i>Email
                   </a>
@@ -37,11 +41,23 @@ export default function CenterCards(props) {
                 <li className="tag__item">
                   <a href={props.phone}>
                     <i className="fa fa-phone mx-1 my-1"></i>Phone
+=======
+                  <a
+                    style={{ fontFamily: "Noto Nastaliq Urdu, serif" }}
+                    href={props.phone}
+                  >
+                    <i className="fa fa-phone mx-1 my-1"></i>
+                    فون نمبر
+>>>>>>> 81d7fd93873c7d61530f49602119b8776a5d9660
                   </a>
                 </li>
                 <li className="tag__item play blue">
-                  <a href={props.location} target="noblank">
-                    <i className="fa fa-location-arrow mx-1 my-1"></i>Location
+                  <a
+                    href={props.location}
+                    style={{ fontFamily: "Noto Nastaliq Urdu, serif" }}
+                    target="noblank"
+                  >
+                    <i className="fa fa-location-arrow mx-1 my-1"></i>مرکز
                   </a>
                 </li>
               </ul>
