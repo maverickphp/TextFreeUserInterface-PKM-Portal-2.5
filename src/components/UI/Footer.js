@@ -8,8 +8,12 @@ export default function Footer() {
         style={{ backgroundColor: "rgb(23 43 81 / 1)" }}
       >
         © 2020 Copyright: &nbsp;
-        <a className="text-white" href="!#">
-          Maverickphp.com - Devnigma.com
+        <a className="text-white" href="https://maverickphp.com">
+          Maverickphp.com
+        </a>
+        &nbsp; - &nbsp;
+        <a className="text-white" href="https://www.devnigma.com">
+          Devnigma.com
         </a>
       </div>
     </footer>
