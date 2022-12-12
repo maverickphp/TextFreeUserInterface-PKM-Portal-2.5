@@ -1,12 +1,15 @@
 import React from "react";
 import "../../styles/CenterCards.css";
 import { Link } from "react-router-dom";
+import useSound from "use-sound";
+
 
 export default function CenterCards(props) {
+  const [play, { stop }] = useSound(props.sound);
   return (
     <>
-      <section className="light">
-        <div className="container py-2">
+      <section onMouseEnter={() => play()} onMouseLeave={() => stop()}>
+        <div className="container">
           <div className="h1 text-center text-dark" id="pageHeaderTitle"></div>
 
           <article className="postcard light blue">

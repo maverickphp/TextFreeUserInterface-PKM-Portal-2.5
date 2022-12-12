@@ -1,7 +1,10 @@
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
+
 import { Link } from "react-router-dom";
+import testsound from "../pages/audios/homeaudios/homecc.mp3";
+
 import CenterCards from "../UI/CenterCards";
 import attock from "..//UI//CenterCardsImages//attock.jpg";
 import bahawalnagar from "..//UI//CenterCardsImages//bahawalnagar.jpg";
@@ -39,9 +42,11 @@ import sheikhupura from "..//UI//CenterCardsImages//sheikhupura.jpeg";
 import sialkot from "..//UI//CenterCardsImages//sialkot.jpg";
 import tobateksingh from "..//UI//CenterCardsImages//tobateksingh.jpg";
 import vehari from "..//UI//CenterCardsImages//vehari.jpg";
+import ReactAudioPlayer from "react-audio-player";
 
 function Centers(props) {
   document.title = "PKM Punjab - Our Centers";
+
   return (
     <>
       <div
@@ -83,11 +88,28 @@ function Centers(props) {
         id="list-group-tabs-example"
         defaultActiveKey="#attock"
       >
+        <ReactAudioPlayer
+          style={{
+            padding: "5px",
+            marginBottom: "4px",
+            marginRight: "5px",
+            borderRadius: "250px",
+            height: "60px",
+            width: "110px",
+            backgroundColor: "black",
+          }}
+          className="mt-4"
+          // src={}
+          autoPlay
+          loop="true"
+          controls
+        />
         <Row>
           <Col sm={12}>
             <Tab.Pane eventKey="#attock">
               <CenterCards
-                name={"Attock"}
+                sound={testsound}
+                name={"اٹک"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3KsJDYs"}
                 phone={"tel:+92-57-9316440"}
@@ -95,7 +117,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Bahawalnagar"}
+                name={"بہاولنگر"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3iaGeUl"}
                 phone={"tel:+92-63-2277782"}
@@ -103,7 +125,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Bahawalpur"}
+                name={"بہاولپور"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3icquQt"}
                 phone={"tel:+92-62-2200170"}
@@ -111,7 +133,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Bhakkar"}
+                name={"بھکر"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3tYRAxu"}
                 phone={"tel:+92-45-3516222"}
@@ -119,7 +141,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Chakwal"}
+                name={"چکوال"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3GGai4o"}
                 phone={"tel:+92-57-9316440"}
@@ -127,7 +149,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Chiniot"}
+                name={"چنیوٹ"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3GKFxLM"}
                 phone={"tel:+92-476-9210027"}
@@ -135,7 +157,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"DG Khan"}
+                name={"ڈی جی خان"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3GKwbzx"}
                 phone={"tel:+92-64-2601700"}
@@ -143,7 +165,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Faisalabad"}
+                name={"فیصل آباد"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3VaY5sP"}
                 phone={"tel:+92-41-4311500"}
@@ -151,7 +173,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Gujranwala"}
+                name={"گوجرانوالہ"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3icr68J"}
                 phone={"tel:+92-55-3254440"}
@@ -159,7 +181,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Gujrat"}
+                name={"گجرات"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3GSwsQO"}
                 phone={"tel:+92-53-3600692"}
@@ -167,7 +189,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Hafizabad"}
+                name={"حافظ آباد"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3gAg5h6"}
                 phone={"tel:+92-57-7525420"}
@@ -175,7 +197,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Jhang"}
+                name={"جھنگ"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3idrC6J"}
                 phone={"tel:+92-47-9200315"}
@@ -183,7 +205,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Jhelum"}
+                name={"جہلم"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3EyBrU5"}
                 phone={"tel:+92-54-4278703"}
@@ -191,7 +213,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Kasur"}
+                name={"قصور"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3UdTXXW"}
                 phone={"tel:+92-49-2724992"}
@@ -199,7 +221,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Khanewal"}
+                name={"خانیوال"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3gxiJEm"}
                 phone={"tel:+92-65-2661186"}
@@ -207,7 +229,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Khushab"}
+                name={"خوشاب"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3VmGHRA"}
                 phone={"tel:+92-45-4920030"}
@@ -215,7 +237,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Lahore"}
+                name={"لاہور"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3F0jnDT"}
                 phone={"tel:+92-42-99214572"}
@@ -223,7 +245,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Layyah"}
+                name={"لیہ"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3Xpoo01"}
                 phone={"tel:+92-60-6920174"}
@@ -231,7 +253,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Lodhran"}
+                name={"لودھراں"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3ifmBdW"}
                 phone={"tel:+92-60-8362015"}
@@ -239,7 +261,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Mandi Bahauddin"}
+                name={"منڈی بہاؤالدین"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3EECuSu"}
                 phone={"tel:+92-54-6581205"}
@@ -247,7 +269,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Mianwali"}
+                name={"میانوالی"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3OB6V0y"}
                 phone={"tel:+92-45-9231133"}
@@ -255,7 +277,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Multan"}
+                name={"ملتان"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3GJXdXS"}
                 phone={"tel:+92-61-4501907"}
@@ -263,7 +285,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Muzzafargarh"}
+                name={"مظفر گڑھ"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3GJNWz5"}
                 phone={"tel:+92-66-2423900"}
@@ -271,7 +293,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Nankana Sb"}
+                name={"ننکانہ صاب"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3Vr6tnS"}
                 phone={"tel:+92-56-2877423"}
@@ -279,7 +301,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Narowal"}
+                name={"نارووال"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3EthFJK"}
                 phone={"tel:+92-54-2500728"}
@@ -287,7 +309,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Okara"}
+                name={"اوکاڑہ"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3V6CKRm"}
                 phone={"tel:+92-57-9316440"}
@@ -295,7 +317,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Pakpattan"}
+                name={"پاکپتن"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3U3AcSM"}
                 phone={"tel:+92-45-7383152"}
@@ -303,7 +325,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Rahim Yar Khan"}
+                name={"رحیم یار خان"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 llocation={"https://bit.ly/3GEyLXQ"}
                 phone={"tel:+92-68-9230348"}
@@ -311,7 +333,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Rajanpur"}
+                name={"راجن پور"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3OxlmTj"}
                 phone={"tel:+92-60-4567126"}
@@ -319,7 +341,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Rawalpindi"}
+                name={"راولپنڈی"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3EEdIll"}
                 phone={"tel:+92-51-9314015"}
@@ -327,7 +349,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Sahiwal"}
+                name={"ساہیوال"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3tUhJNT"}
                 phone={"tel:+92-40-5480035"}
@@ -335,7 +357,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Sargodha"}
+                name={"سرگودھا"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3AHJtch"}
                 phone={"tel:+92-48-6310213"}
@@ -343,7 +365,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Sheikhupura"}
+                name={"شیخوپورہ"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3tW95OX"}
                 phone={"tel:+92-56-3611076"}
@@ -351,7 +373,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Sialkot"}
+                name={"سیالکوٹ"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3tZmDcm"}
                 phone={"tel:+92-52-6520499"}
@@ -359,7 +381,7 @@ function Centers(props) {
                 center={"#attock"}
               />
               <CenterCards
-                name={"Toba Tek Singh"}
+                name={"ٹوبہ ٹیک سنگھ"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3gA0BKc"}
                 phone={"tel:+92-46-2515909"}
@@ -368,7 +390,7 @@ function Centers(props) {
               />
               <CenterCards
                 {...props.changeProgress(100)}
-                name={"Vehari"}
+                name={"وہاڑی"}
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3gB8L50"}
                 phone={"tel:+92-67-3202028"}

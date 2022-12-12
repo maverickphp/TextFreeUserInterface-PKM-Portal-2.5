@@ -49,12 +49,30 @@ const Services = (props) => {
       audio.addEventListener("play", pauseOtherAudios);
     }
   }, []);
+
   return (
     <Tab.Container
       {...props.changeProgress(20)}
       id="list-group-tabs"
       defaultActiveKey={window.location.hash}
     >
+      <div
+        className="text-start d-flex p-2 justify-content-start"
+        style={{ top: 80, left: 0, position: "absolute" }}
+      >
+        <Link
+          to="/services"
+          className="btn btn-danger text-center justify-content-center d-inline-flex p-2"
+          style={{
+            fontFamily: "Noto Nastaliq Urdu, serif",
+            fontSize: "32px",
+            marginLeft: "20px",
+            paddingBottom: "20px",
+          }}
+        >
+          &larr; واپس جائیے
+        </Link>
+      </div>
       <Col sm={12}>
         <Tab.Content className="col-10" style={myStyle}>
           <h2>کریکٹر سرٹیفکیٹ کا تعارف</h2>
