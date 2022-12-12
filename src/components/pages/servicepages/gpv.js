@@ -14,6 +14,8 @@ import bycourierstep4 from "../audios/stepsaudios/bycourierstep4.mp3";
 
 import gpvstep1 from "../audios/stepsaudios/gpvstep1.mp3";
 
+import gpvstep2audio from "../audios/stepsaudios/gpvstep2.mp3";
+
 import step1 from "../../UI/ServicesImages/step1.png";
 
 import gpvstep3 from "../../UI/ServicesImages/gpvstep3.png";
@@ -147,7 +149,7 @@ const Services = (props) => {
                     backgroundColor: "black",
                   }}
                   className="mt-3"
-                  src={gpv}
+                  src={gpvstep2audio}
                   controls
                 />
               </div>

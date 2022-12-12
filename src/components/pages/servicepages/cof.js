@@ -14,6 +14,8 @@ import byhandstep4 from "../audios/stepsaudios/byhandstep4.mp3";
 
 import cofstep1 from "../audios/stepsaudios/cofstep1.mp3";
 
+import cofstep2audio from "../audios/stepsaudios/cofstep2.mp3";
+
 import step1 from "../../UI/ServicesImages/step1.png";
 
 import freestep3 from "../../UI/ServicesImages/freestep3.png";
@@ -147,7 +149,7 @@ const Services = (props) => {
                     backgroundColor: "black",
                   }}
                   className="mt-3"
-                  src={cof}
+                  src={cofstep2audio}
                   controls
                 />
               </div>

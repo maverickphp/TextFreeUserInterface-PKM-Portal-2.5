@@ -14,6 +14,8 @@ import bycourierstep4 from "../audios/stepsaudios/bycourierstep4.mp3";
 
 import ccstep1 from "../audios/stepsaudios/ccstep1.mp3";
 
+import ccstep2audio from "../audios/stepsaudios/ccstep2.mp3";
+
 import step1 from "../../UI/ServicesImages/step1.png";
 import ccstep3 from "../../UI/ServicesImages/ccstep3.png";
 import ccstep2 from "../../UI/ServicesImages/ccstep2.png";
@@ -147,7 +149,7 @@ const Services = (props) => {
                     backgroundColor: "black",
                   }}
                   className="mt-3"
-                  src={ccstep1}
+                  src={ccstep2audio}
                   controls
                 />
               </div>
