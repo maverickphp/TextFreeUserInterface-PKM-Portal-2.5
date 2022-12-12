@@ -9,7 +9,7 @@ export default function Footer() {
       >
         © 2020 Copyright: &nbsp;
         <a className="text-white" href="!#">
-          Maverick.php - Devnigma.com
+          Maverickphp.com - Devnigma.com
         </a>
       </div>
     </footer>
