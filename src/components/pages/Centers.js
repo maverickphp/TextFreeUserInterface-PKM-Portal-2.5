@@ -5,41 +5,46 @@ import Tab from "react-bootstrap/Tab";
 import { Link } from "react-router-dom";
 
 import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
-// import attocksound from "../pages/audios/centersaudios/attock.mp3";
+import bahawalnagarsound from "../pages/audios/centersaudios/bahawalnagar.mp3";
+import bahawalpursound from "../pages/audios/centersaudios/bahawalpur.mp3";
+import bhakkarsound from "../pages/audios/centersaudios/bhakkar.mp3";
+import chakwalsound from "../pages/audios/centersaudios/chakwal.mp3";
+import chiniotsound from "../pages/audios/centersaudios/chiniot.mp3";
+import dgkhansound from "../pages/audios/centersaudios/dgkhan.mp3";
+import faisalabadsound from "../pages/audios/centersaudios/faisalabad.mp3";
+import gujranwalasound from "../pages/audios/centersaudios/gujranwala.mp3";
+import gujratsound from "../pages/audios/centersaudios/gujrat.mp3";
+import hafizabadsound from "../pages/audios/centersaudios/hafizabad.mp3";
+import jhangsound from "../pages/audios/centersaudios/jhang.mp3";
+import jhelumsound from "../pages/audios/centersaudios/jhelum.mp3";
+import kasursound from "../pages/audios/centersaudios/kasur.mp3";
+import khanewalsound from "../pages/audios/centersaudios/khanewal.mp3";
+import khushabsound from "../pages/audios/centersaudios/khushab.mp3";
+import lahoresound from "../pages/audios/centersaudios/lahore.mp3";
+import layyahsound from "../pages/audios/centersaudios/layyah.mp3";
+import lodhransound from "../pages/audios/centersaudios/lodhran.mp3";
+import mandisound from "../pages/audios/centersaudios/mandi.mp3";
+import mianwalisound from "../pages/audios/centersaudios/mianwali.mp3";
+import multansound from "../pages/audios/centersaudios/multan.mp3";
+import muzzafargarhsound from "../pages/audios/centersaudios/muzzafargarh.mp3";
+import nankanasound from "../pages/audios/centersaudios/nankana.mp3";
+import narowalsound from "../pages/audios/centersaudios/narowal.mp3";
+import okarasound from "../pages/audios/centersaudios/okara.mp3";
+import pakpattansound from "../pages/audios/centersaudios/pakpattan.mp3";
+import rahimyarkhansound from "../pages/audios/centersaudios/rahimyarkhan.mp3";
+import rajanpursound from "../pages/audios/centersaudios/rajanpur.mp3";
+import rawalpindisound from "../pages/audios/centersaudios/rawalpindi.mp3";
+import sahiwalsound from "../pages/audios/centersaudios/sahiwal.mp3";
+import sargodhasound from "../pages/audios/centersaudios/sargodha.mp3";
+import sheikhupurasound from "../pages/audios/centersaudios/sheikhupura.mp3";
+import sialkotsound from "../pages/audios/centersaudios/sialkot.mp3";
+import tobateksinghsound from "../pages/audios/centersaudios/tobateksingh.mp3";
+import veharisound from "../pages/audios/centersaudios/vehari.mp3";
+
+
+
+
+
 
 import CenterCards from "../UI/CenterCards";
 import attock from "..//UI//CenterCardsImages//attock.jpg";
@@ -146,323 +151,323 @@ function Centers(props) {
               <CenterCards
                 sound={attocksound}
                 name={"اٹک"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3KsJDYs"}
                 phone={"tel:+92-57-9316440"}
                 image={attock}
                 center={"#attock"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={bahawalnagarsound}
                 name={"بہاولنگر"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3iaGeUl"}
                 phone={"tel:+92-63-2277782"}
                 image={bahawalnagar}
                 center={"#bahawalnagar"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={bahawalpursound}
                 name={"بہاولپور"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3icquQt"}
                 phone={"tel:+92-62-2200170"}
                 image={bahawalpur}
                 center={"#bahawalpur"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={bhakkarsound}
                 name={"بھکر"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3tYRAxu"}
                 phone={"tel:+92-45-3516222"}
                 image={bhakkar}
                 center={"#bhakkar"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={chakwalsound}
                 name={"چکوال"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3GGai4o"}
                 phone={"tel:+92-57-9316440"}
                 image={chakwal}
                 center={"#chakwal"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={chiniotsound}
                 name={"چنیوٹ"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3G*KFxLM"}
                 phone={"tel:+92-476-9210027"}
                 image={chiniot}
                 center={"#chiniot"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={dgkhansound}
                 name={"ڈی جی خان"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3GKwbzx"}
                 phone={"tel:+92-64-2601700"}
                 image={dgkhan}
                 center={"#dgkhan"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={faisalabadsound}
                 name={"فیصل آباد"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3VaY5sP"}
                 phone={"tel:+92-41-4311500"}
                 image={faisalabad}
                 center={"#faisalabad"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={gujranwalasound}
                 name={"گوجرانوالہ"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3icr68J"}
                 phone={"tel:+92-55-3254440"}
                 image={gujranwala}
                 center={"#gujranwala"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={gujratsound}
                 name={"گجرات"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3GSwsQO"}
                 phone={"tel:+92-53-3600692"}
                 image={gujrat}
                 center={"#gujrat"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={hafizabadsound}
                 name={"حافظ آباد"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3gAg5h6"}
                 phone={"tel:+92-57-7525420"}
                 image={hafizabad}
                 center={"#hafizabad"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={jhangsound}
                 name={"جھنگ"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3idrC6J"}
                 phone={"tel:+92-47-9200315"}
                 image={jhang}
                 center={"#jhang"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={jhelumsound}
                 name={"جہلم"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3EyBrU5"}
                 phone={"tel:+92-54-4278703"}
                 image={jhelum}
                 center={"#jhelum"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={kasursound}
                 name={"قصور"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3UdTXXW"}
                 phone={"tel:+92-49-2724992"}
                 image={kasur}
                 center={"#kasur"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={khanewalsound}
                 name={"خانیوال"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3gxiJEm"}
                 phone={"tel:+92-65-2661186"}
                 image={khanewal}
                 center={"#khanewal"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={khushabsound}
                 name={"خوشاب"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3VmGHRA"}
                 phone={"tel:+92-45-4920030"}
                 image={khushab}
                 center={"#khushab"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={lahoresound}
                 name={"لاہور"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3F0jnDT"}
                 phone={"tel:+92-42-99214572"}
                 image={lahore}
                 center={"#lahore"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={layyahsound}
                 name={"لیہ"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3Xpoo01"}
                 phone={"tel:+92-60-6920174"}
                 image={layyah}
                 center={"#layyah"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={lodhransound}
                 name={"لودھراں"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3ifmBdW"}
                 phone={"tel:+92-60-8362015"}
                 image={lodhran}
                 center={"#lodhran"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={mandisound}
                 name={"منڈی بہاؤالدین"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3EECuSu"}
                 phone={"tel:+92-54-6581205"}
                 image={mandi}
                 center={"#mandi"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={mianwalisound}
                 name={"میانوالی"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3OB6V0y"}
                 phone={"tel:+92-45-9231133"}
                 image={mianwali}
                 center={"#mianwali"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={multansound}
                 name={"ملتان"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3GJXdXS"}
                 phone={"tel:+92-61-4501907"}
                 image={multan}
                 center={"#multan"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={muzzafargarhsound}
                 name={"مظفر گڑھ"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3GJNWz5"}
                 phone={"tel:+92-66-2423900"}
                 image={muzzafargarh}
                 center={"#muzzafargarh"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={nankanasound}
                 name={"ننکانہ صاب"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3Vr6tnS"}
                 phone={"tel:+92-56-2877423"}
                 image={nankana}
                 center={"#nankana"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={narowalsound}
                 name={"نارووال"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3EthFJK"}
                 phone={"tel:+92-54-2500728"}
                 image={narowal}
                 center={"#narowal"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={okarasound}
                 name={"اوکاڑہ"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3V6CKRm"}
                 phone={"tel:+92-57-9316440"}
                 image={okara}
                 center={"#okara"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={pakpattansound}
                 name={"پاکپتن"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3U3AcSM"}
                 phone={"tel:+92-45-7383152"}
                 image={pakpattan}
                 center={"#pakpattan"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={rahimyarkhansound}
                 name={"رحیم یار خان"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 llocation={"https://bit.ly/3GEyLXQ"}
                 phone={"tel:+92-68-9230348"}
                 image={rahimyarkhan}
                 center={"#rahimyarkhan"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={rajanpursound}
                 name={"راجن پور"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3OxlmTj"}
                 phone={"tel:+92-60-4567126"}
                 image={rajanpur}
                 center={"#rajanpur"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={rawalpindisound}
                 name={"راولپنڈی"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3EEdIll"}
                 phone={"tel:+92-51-9314015"}
                 image={rawalpindi}
                 center={"#rawalpindi"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={sahiwalsound}
                 name={"ساہیوال"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3tUhJNT"}
                 phone={"tel:+92-40-5480035"}
                 image={sahiwal}
                 center={"#sahiwal"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={sargodhasound}
                 name={"سرگودھا"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3AHJtch"}
                 phone={"tel:+92-48-6310213"}
                 image={sargodha}
                 center={"#sargodha"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={sheikhupurasound}
                 name={"شیخوپورہ"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3tW95OX"}
                 phone={"tel:+92-56-3611076"}
                 image={sheikhupura}
                 center={"#sheikhupura"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={sialkotsound}
                 name={"سیالکوٹ"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3tZmDcm"}
                 phone={"tel:+92-52-6520499"}
                 image={sialkot}
                 center={"#sialkot"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={tobateksinghsound}
                 name={"ٹوبہ ٹیک سنگھ"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3gA0BKc"}
                 phone={"tel:+92-46-2515909"}
                 image={tobateksingh}
                 center={"#tobateksingh"}
               />
               <CenterCards
-                sound={attocksound}
+                sound={veharisound}
                 {...props.changeProgress(100)}
                 name={"وہاڑی"}
-                time={"Monday - Saturday - 9am to 5pm"}
+                time={"پیر - ہفتہ (صبح 9 سے 5 بجے تک)"}
                 location={"https://bit.ly/3gB8L50"}
                 phone={"tel:+92-67-3202028"}
                 image={vehari}
