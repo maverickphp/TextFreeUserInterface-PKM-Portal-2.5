@@ -25,7 +25,7 @@ import courierstep4 from "../../UI/ServicesImages/courierstep4.png";
 const Services = (props) => {
   document.title = "PKM Punjab - Our Services";
   const myStyle = {
-    padding: "50px 0px",
+    padding: "40px 0px",
     justifyContent: "center",
     margin: "auto",
   };
@@ -77,7 +77,7 @@ const Services = (props) => {
         </Link>
       </div>
       <Col sm={12}>
-        <Tab.Content className="col-10" style={myStyle}>
+        <Tab.Content className="col-12" style={myStyle}>
           <h2>کریکٹر سرٹیفکیٹ کا تعارف</h2>
           <ReactAudioPlayer
             style={{
@@ -95,7 +95,8 @@ const Services = (props) => {
             loop="true"
             controls
           />
-          <div className="col-6">
+
+          <div className="col-3">
             <Link
               to="/centers"
               type="button"
@@ -111,7 +112,7 @@ const Services = (props) => {
             </Link>
           </div>
           <div className="d-flex flex-row">
-            <div className="col-6">
+            <div className="col-3">
               <div className="d-inline-flex p-2">
                 <h2 className="mb-3 mt-2 text-center" style={textStyle}>
                   1
@@ -133,7 +134,7 @@ const Services = (props) => {
               </div>
               <img className="img-fluid" src={step1} alt="stepsimage" />
             </div>
-            <div className="col-6">
+            <div className="col-3">
               <div className="d-inline-flex p-2">
                 <h2 className="mb-3 mt-2 text-center" style={textStyle}>
                   2
@@ -155,10 +156,8 @@ const Services = (props) => {
               </div>
               <img className="img-fluid" src={ccstep2} alt="stepsimage" />
             </div>
-          </div>
-          <div className="d-flex flex-row" style={{ marginTop: "25px" }}>
-            <div className="col-6">
-              <img className="img-fluid" src={ccstep3} alt="stepsimage" />
+
+            <div className="col-3">
               <div className="d-inline-flex p-2">
                 <h2 className="mb-3 mt-2 text-center" style={textStyle}>
                   3
@@ -178,9 +177,9 @@ const Services = (props) => {
                   controls
                 />
               </div>
+              <img className="img-fluid" src={ccstep3} alt="stepsimage" />
             </div>
-            <div className="col-6">
-              <img className="img-fluid" src={courierstep4} alt="stepsimage" />
+            <div className="col-3">
               <div className="d-inline-flex p-2">
                 <h2 className="mb-3 mt-2 text-center" style={textStyle}>
                   4
@@ -201,6 +200,7 @@ const Services = (props) => {
                   controls
                 />
               </div>
+              <img className="img-fluid" src={courierstep4} alt="stepsimage" />
             </div>
           </div>
         </Tab.Content>
