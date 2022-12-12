@@ -42,10 +42,6 @@ import tobateksinghsound from "../pages/audios/centersaudios/tobateksingh.mp3";
 import veharisound from "../pages/audios/centersaudios/vehari.mp3";
 
 
-
-
-
-
 import CenterCards from "../UI/CenterCards";
 import attock from "..//UI//CenterCardsImages//attock.jpg";
 import bahawalnagar from "..//UI//CenterCardsImages//bahawalnagar.jpg";
@@ -87,7 +83,6 @@ import ReactAudioPlayer from "react-audio-player";
 
 function Centers(props) {
   document.title = "PKM Punjab - Our Centers";
-
   return (
     <>
       <div

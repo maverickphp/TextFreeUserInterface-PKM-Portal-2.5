@@ -63,7 +63,7 @@ const Services = (props) => {
       >
         <Link
           to="/services"
-          className="btn btn-danger text-center justify-content-center d-inline-flex p-2"
+          className="btn btn-warning text-center justify-content-center d-inline-flex p-2"
           style={{
             fontFamily: "Noto Nastaliq Urdu, serif",
             fontSize: "32px",

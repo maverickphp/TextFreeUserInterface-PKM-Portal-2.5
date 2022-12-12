@@ -3,7 +3,6 @@ import "../../styles/CenterCards.css";
 import { Link } from "react-router-dom";
 import useSound from "use-sound";
 
-
 export default function CenterCards(props) {
   const [play, { stop }] = useSound(props.sound);
   return (
@@ -24,8 +23,14 @@ export default function CenterCards(props) {
               <h1 className="postcard__title blue">
                 <Link to={props.center}>{props.name}</Link>
               </h1>
-              <div className="postcard__subtitle small">
-                <time dateTime="2020-05-25 12:00:00">
+              <div className="postcard__subtitle small mt-3">
+                <time
+                  dateTime="2020-05-25 12:00:00"
+                  style={{
+                    fontFamily: "Noto Nastaliq Urdu, serif",
+                    fontSize: "14px",
+                  }}
+                >
                   <i className="fas fa-clock px-1"></i>
                   {props.time}
                 </time>

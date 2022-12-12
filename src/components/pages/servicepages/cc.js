@@ -31,7 +31,8 @@ const Services = (props) => {
   const textStyle = {
     padding: "10px 5px",
     borderRadius: "250px",
-    backgroundColor: "orange",
+    backgroundColor: "black",
+    color: "white",
     margin: "auto",
     width: "70px",
     height: "70px",
@@ -62,7 +63,7 @@ const Services = (props) => {
       >
         <Link
           to="/services"
-          className="btn btn-danger text-center justify-content-center d-inline-flex p-2"
+          className="btn btn-warning text-center justify-content-center d-inline-flex p-2"
           style={{
             fontFamily: "Noto Nastaliq Urdu, serif",
             fontSize: "32px",
