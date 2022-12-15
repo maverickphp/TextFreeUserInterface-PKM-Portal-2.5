@@ -19,10 +19,11 @@ function HeroSection() {
               loop="true"
               style={{
                 padding: "5px",
-                marginLeft: "100px",
+                marginLeft: "80px",
                 marginBottom: "4px",
                 marginRight: "5px",
                 borderRadius: "250px",
+                marginTop:"170px",
                 height: "60px",
                 width: "110px",
                 backgroundColor: "black",
@@ -33,7 +34,7 @@ function HeroSection() {
               type="button"
               style={{
                 padding: "15px 0px",
-                width: "300px",
+                width: "250px",
                 fontSize: "36px",
                 fontFamily: "Noto Nastaliq Urdu, serif",
               }}
@@ -46,7 +47,7 @@ function HeroSection() {
               type="button"
               style={{
                 padding: "15px 0px",
-                width: "300px",
+                width: "250px",
                 fontSize: "36px",
                 fontFamily: "Noto Nastaliq Urdu, serif",
               }}

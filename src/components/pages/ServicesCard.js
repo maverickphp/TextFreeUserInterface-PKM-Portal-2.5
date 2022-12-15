@@ -26,7 +26,7 @@ import servicecard from "../pages/audios/serviceaudios/servicecard.mp3";
 
 const ServicesCard = () => {
   const myStyle = {
-    width: "15rem",
+    width: "100%",
     padding: "10% 25%",
     overflow: "automatic",
     margin: "auto",
@@ -62,11 +62,11 @@ const ServicesCard = () => {
         >
           <Link
             to="/"
-            className="btn btn-warning text-center justify-content-center d-inline-flex p-2"
+            className="btn btn-warning"
             style={{
               fontFamily: "Noto Nastaliq Urdu, serif",
               fontSize: "32px",
-              marginLeft: "20px",
+              marginLeft: "auto",
               paddingBottom: "20px",
             }}
           >
@@ -83,14 +83,14 @@ const ServicesCard = () => {
             style={{
               fontFamily: "Noto Nastaliq Urdu, serif",
               fontSize: "32px",
-              marginLeft: "20px",
+              marginLeft: "auto",
               paddingBottom: "20px",
             }}
           >
             مراکز &rarr;
           </Link>
         </div>
-        <h1 className="mt-3" style={{ fontSize: 42 }}>
+        <h1 style={{ fontSize: 36,  marginTop:"90px" }}>
           ہماری خدمات
         </h1>
         <ReactAudioPlayer

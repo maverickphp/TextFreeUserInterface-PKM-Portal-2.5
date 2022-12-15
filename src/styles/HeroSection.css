@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,400,800,900&display=swap");
 .hero {
   background: #133a53 url(../components/UI/OtherImages/mainbanner.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
@@ -14,16 +14,13 @@
 .hero .overlay {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 20%;
   right: 0;
 }
 .hero .overlay .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 95vh;
-  width: 60vw;
-  margin: auto;
   transform-origin: left;
   -webkit-animation: reveal 1s ease-in-out forwards;
           animation: reveal 1s ease-in-out forwards;

@@ -4,7 +4,7 @@ $poppins: "Poppins", sans-serif;
 
 .hero {
   background: #133a53 url(../components/UI/OtherImages/mainbanner.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
@@ -16,7 +16,7 @@ $poppins: "Poppins", sans-serif;
   .overlay {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 20%;
     right: 0;
     // background: rgb(19,58,83);
     // background: linear-gradient(220deg, rgba(19,58,83,0.85) 0%, rgba(208,97,40,0.85) 100%);
@@ -24,9 +24,9 @@ $poppins: "Poppins", sans-serif;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 95vh;
-      width: 60vw;
-      margin: auto;
+      // height: 95vh;
+      // width: 30vw;
+      // margin-right: auto;
       transform-origin: left;
       animation: reveal 1s ease-in-out forwards;
       h1 {
@@ -76,28 +76,6 @@ $poppins: "Poppins", sans-serif;
   }
 }
 
-// audio::-webkit-media-controls-time-remaining-display {
-//   display: none;
-// }
-// audio::-webkit-media-controls-current-time-display {
-//   display: none;
-// }
-// audio::-webkit-media-controls-timeline {
-//   display: none;
-// }
-// audio::-webkit-media-controls-volume-slider {
-//   display: none;
-// }
-// audio::-webkit-media-controls-mute-button {
-//   display: none;
-// }
-// audio::-webkit-media-controls-toggle-closed-captions-button {
-//   display: none;
-// }
-
-// audio::-webkit-media-controls-panel{
-//     display: none;
-// }
 audio::-webkit-media-controls-mute-button {
   display: none;
 }
