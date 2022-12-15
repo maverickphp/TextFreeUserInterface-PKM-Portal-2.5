@@ -108,11 +108,11 @@ const Centers = (props) => {
       >
         <Link
           to="/"
-          className="btn btn-warning text-center justify-content-center d-inline-flex p-2"
+          className="btn btn-warning"
           style={{
             fontFamily: "Noto Nastaliq Urdu, serif",
             fontSize: "32px",
-            marginLeft: "20px",
+            marginLeft: "auto",
             paddingBottom: "20px",
           }}
         >
@@ -129,7 +129,7 @@ const Centers = (props) => {
           style={{
             fontFamily: "Noto Nastaliq Urdu, serif",
             fontSize: "32px",
-            marginLeft: "20px",
+            marginLeft: "auto",
             paddingBottom: "20px",
           }}
         >
@@ -141,22 +141,24 @@ const Centers = (props) => {
         id="list-group-tabs-example"
         defaultActiveKey="#attock"
       >
-        <ReactAudioPlayer
-          style={{
-            padding: "5px",
-            marginBottom: "4px",
-            marginRight: "5px",
-            borderRadius: "250px",
-            height: "60px",
-            width: "110px",
-            backgroundColor: "black",
-          }}
-          className="mt-4"
-          src={centersmainaudio}
-          autoPlay
-          loop="true"
-          controls
-        />
+        <div style={{ marginTop: "80px" }}>
+          <ReactAudioPlayer
+            style={{
+              padding: "5px",
+              marginBottom: "4px",
+              marginRight: "5px",
+              borderRadius: "250px",
+              height: "60px",
+              width: "110px",
+              backgroundColor: "black",
+            }}
+            className="mt-4"
+            src={centersmainaudio}
+            autoPlay
+            loop="true"
+            controls
+          />
+        </div>
         <Row>
           <Col sm={12}>
             <Tab.Pane eventKey="#attock">

@@ -14,8 +14,9 @@
 .hero .overlay {
   position: absolute;
   top: 0;
-  left: 20%;
+  left: 0;
   right: 0;
+  bottom: 0;
 }
 .hero .overlay .content {
   display: flex;
@@ -44,9 +45,9 @@
   height: 100%;
   background: #ff6700;
   z-index: 3;
-  animation: reveal 0.5s reverse forwards;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation: reveal 0.3s reverse forwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 .hero .overlay:after {
   content: "";
@@ -57,9 +58,9 @@
   height: 100%;
   background: #133a53;
   z-index: 2;
-  animation: reveal 0.7s reverse forwards;
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  animation: reveal 0.3s reverse forwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
   transform-origin: left;
 }
 

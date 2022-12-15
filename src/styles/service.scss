@@ -1,0 +1,27 @@
+.servicecard {
+  padding-left: 0px;
+}
+
+.imgtop {
+  margin-left: 0;
+}
+.imgtopbtn {
+  margin-left: 0;
+}
+
+@media (max-width: 480px) {
+  .servicecard {
+    padding-left: 10%;
+  }
+  .img-fluid {
+    max-width: 400px;
+    height: auto;
+    padding-right: 50px;
+  }
+  .imgtop {
+    margin-left: 60%;
+  }
+  .imgtopbtn {
+    margin-left: 33%;
+  }
+}

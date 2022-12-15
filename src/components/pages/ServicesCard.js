@@ -25,19 +25,19 @@ import servicecard from "../pages/audios/serviceaudios/servicecard.mp3";
 // import homewvr from "../pages/audios/homeaudios/homewvr.mp3";
 
 const ServicesCard = () => {
-  const myStyle = {
-    width: "100%",
-    padding: "10% 25%",
-    overflow: "automatic",
-    margin: "auto",
-    borderRadius: 25,
-  };
+  // const myStyle = {
+  //   width: "15rem",
+  //   padding: "10% 25%",
+  //   overflow: "automatic",
+  //   margin: "auto",
+  //   borderRadius: 25,
+  // };
 
-  const cardStyle = {
-    color: "white",
-    borderRadius: "5%",
-    boxShadow: "30px 10px 50px 10px grey",
-  };
+  // const cardStyle = {
+  //   color: "white",
+  //   borderRadius: "5%",
+  //   boxShadow: "30px 10px 50px 10px grey",
+  // };
 
   useEffect(() => {
     const audios = document.querySelectorAll("audio");
@@ -55,7 +55,7 @@ const ServicesCard = () => {
 
   return (
     <>
-      <div style={{ marginTop: "20px", marginBottom: "50px" }}>
+      <div>
         <div
           className="text-start d-flex p-2 justify-content-start"
           style={{ top: 80, left: 0, position: "absolute" }}
@@ -90,9 +90,7 @@ const ServicesCard = () => {
             مراکز &rarr;
           </Link>
         </div>
-        <h1 style={{ fontSize: 36,  marginTop:"90px" }}>
-          ہماری خدمات
-        </h1>
+        <h1 style={{ fontSize: 36, marginTop: "90px" }}>ہماری خدمات</h1>
         <ReactAudioPlayer
           style={{
             padding: "5px",
@@ -109,12 +107,257 @@ const ServicesCard = () => {
           src={servicecard}
           controls
         />
-        <div className="d-flex justify-content-center pb-2 pt-2">
+      </div>
+
+      <section className="our-webcoderskull" style={{ marginTop: "25px" }}>
+        <div className="container">
+          <ul className="row">
+            <li className="col">
+              <div
+                className="cnt-block equal-hight"
+                style={{ height: "349px;" }}
+              >
+                <figure>
+                  <img src={cc} className="img-responsive" alt="" />
+                </figure>
+                <Link to="/cc">
+                  <h3
+                    className="card-title"
+                    style={{
+                      backgroundColor: "blue",
+                      padding: "15px",
+                      borderRadius: "10px",
+                      color: "white",
+                    }}
+                  >
+                    کریکٹر سرٹیفیکیٹ
+                  </h3>
+                </Link>
+              </div>
+            </li>
+            <li className="col">
+              <div
+                className="cnt-block equal-hight"
+                style={{ height: "349px;" }}
+              >
+                <figure>
+                  <img src={gpv} className="img-responsive" alt="" />
+                </figure>
+                <Link to="/gpv">
+                  <h3
+                    className="card-title"
+                    style={{
+                      backgroundColor: "green",
+                      padding: "15px",
+                      borderRadius: "10px",
+                      color: "white",
+                    }}
+                  >
+                    جنرل پولیس کی تصدیق
+                  </h3>
+                </Link>
+              </div>
+            </li>
+            <li className="col">
+              <div
+                className="cnt-block equal-hight"
+                style={{ height: "349px;" }}
+              >
+                <figure>
+                  <img src={ldl} className="img-responsive" alt="" />
+                </figure>
+                <Link to="/ldl">
+                  <h3
+                    className="card-title"
+                    style={{
+                      backgroundColor: "red",
+                      padding: "15px",
+                      borderRadius: "10px",
+                      color: "white",
+                    }}
+                  >
+                    لرنر ڈرائیونگ لائسنس
+                  </h3>
+                </Link>
+              </div>
+            </li>
+            <li className="col">
+              <div
+                className="cnt-block equal-hight"
+                style={{ height: "349px;" }}
+              >
+                <figure>
+                  <img src={er} className="img-responsive" alt="" />
+                </figure>
+                <Link to="/er">
+                  <h3
+                    className="card-title"
+                    style={{
+                      backgroundColor: "#E9967A",
+                      padding: "15px",
+                      borderRadius: "10px",
+                      color: "white",
+                    }}
+                  >
+                    ملازمین کی رجسٹریشن
+                  </h3>
+                </Link>
+              </div>
+            </li>
+            <li className="col">
+              <div
+                className="cnt-block equal-hight"
+                style={{ height: "349px;" }}
+              >
+                <figure>
+                  <img src={cof} className="img-responsive" alt="" />
+                </figure>
+                <Link to="/cof">
+                  <h3
+                    className="card-title"
+                    style={{
+                      backgroundColor: "orange",
+                      padding: "15px",
+                      borderRadius: "10px",
+                      color: "white",
+                    }}
+                  >
+                    ایف آئی آر کی کاپی
+                  </h3>
+                </Link>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section className="our-webcoderskull">
+        <div className="container">
+          <ul className="row">
+            <li className="col">
+              <div
+                className="cnt-block equal-hight"
+                style={{ height: "349px;" }}
+              >
+                <figure>
+                  <img src={wvr} className="img-responsive" alt="" />
+                </figure>
+                <Link to="/wvr">
+                  <h3
+                    className="card-title"
+                    style={{
+                      backgroundColor: "pink",
+                      padding: "15px",
+                      borderRadius: "10px",
+                      color: "white",
+                    }}
+                  >
+                    خواتین پر تشدد کی رپورٹ
+                  </h3>
+                </Link>
+              </div>
+            </li>
+            <li className="col">
+              <div
+                className="cnt-block equal-hight"
+                style={{ height: "349px;" }}
+              >
+                <figure>
+                  <img src={cr} className="img-responsive" alt="" />
+                </figure>
+                <Link to="/cr">
+                  <h3
+                    className="card-title"
+                    style={{
+                      backgroundColor: "purple",
+                      padding: "15px",
+                      borderRadius: "10px",
+                      color: "white",
+                    }}
+                  >
+                    کرائم رپورٹ
+                  </h3>
+                </Link>
+              </div>
+            </li>
+            <li className="col">
+              <div
+                className="cnt-block equal-hight"
+                style={{ height: "349px;" }}
+              >
+                <figure>
+                  <img src={lr} className="img-responsive" alt="" />
+                </figure>
+                <Link to="/lr">
+                  <h3
+                    className="card-title"
+                    style={{
+                      backgroundColor: "black",
+                      padding: "15px",
+                      borderRadius: "10px",
+                      color: "white",
+                    }}
+                  >
+                    نقصان کی رپورٹ
+                  </h3>
+                </Link>
+              </div>
+            </li>
+            <li className="col">
+              <div
+                className="cnt-block equal-hight"
+                style={{ height: "349px;" }}
+              >
+                <figure>
+                  <img src={tr} className="img-responsive" alt="" />
+                </figure>
+                <Link to="/tr">
+                  <h3
+                    className="card-title"
+                    style={{
+                      fontSize: "19px",
+                      backgroundColor: "grey",
+                      padding: "15px",
+                      borderRadius: "10px",
+                      color: "white",
+                    }}
+                  >
+                    کرایہ داروں کی رجسٹریشن
+                  </h3>
+                </Link>
+              </div>
+            </li>
+            <li className="col">
+              <div
+                className="cnt-block equal-hight"
+                style={{ height: "349px;" }}
+              >
+                <figure>
+                  <img src={vv} className="img-responsive" alt="" />
+                </figure>
+                <Link to="/vv">
+                  <h3
+                    className="card-title"
+                    style={{
+                      backgroundColor: "gold",
+                      padding: "15px",
+                      borderRadius: "10px",
+                      color: "white",
+                    }}
+                  >
+                    گاڑیوں کی رجسٹریشن
+                  </h3>
+                </Link>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      {/* <div className="d-flex justify-content-center pb-2 pt-2">
           <Link style={cardStyle} to="/cc" className="card m-1 mx-2">
             <img
               style={myStyle}
               src={cc}
-              className="card-img-top  img-thumbnail"
+              className="card-img-top img-thumbnail"
               alt="Cardimg1"
             />
             <div className="card-body">
@@ -313,7 +556,7 @@ const ServicesCard = () => {
             </div>
           </Link>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

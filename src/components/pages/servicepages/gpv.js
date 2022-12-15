@@ -5,6 +5,7 @@ import { useEffect } from "react";
 
 import Col from "react-bootstrap/Col";
 import Tab from "react-bootstrap/Tab";
+import "../../../styles/service.css";
 
 import gpv from "../audios/serviceaudios/gpv.mp3";
 
@@ -27,7 +28,7 @@ import courierstep4 from "../../UI/ServicesImages/courierstep4.png";
 const Services = (props) => {
   document.title = "PKM Punjab - Our Services";
   const myStyle = {
-    padding: "80px 0px",
+    padding: "110px 0px",
     justifyContent: "center",
     margin: "auto",
   };
@@ -65,11 +66,11 @@ const Services = (props) => {
       >
         <Link
           to="/services"
-          className="btn btn-warning text-center justify-content-center d-inline-flex p-2"
+          className="btn btn-warning"
           style={{
             fontFamily: "Noto Nastaliq Urdu, serif",
             fontSize: "32px",
-            marginLeft: "20px",
+            marginLeft: "auto",
             paddingBottom: "20px",
           }}
         >
@@ -95,7 +96,7 @@ const Services = (props) => {
             loop="true"
             controls
           />
-          <div className="col-3">
+          <div className="col-3 imgtopbtn">
             <Link
               to="/centers"
               type="button"
@@ -105,14 +106,15 @@ const Services = (props) => {
                 fontFamily: "Noto Nastaliq Urdu, serif",
                 fontSize: "22px",
                 padding: "10px",
+                width: "150px",
               }}
             >
               قریب ترین مرکز
             </Link>
           </div>
-          <div className="d-flex flex-row">
+          <div className="d-inline-flex flex-column flex-sm-row servicecard">
             <div className="col-3">
-              <div className="d-inline-flex p-2">
+              <div className="d-inline-flex p-2 imgtop">
                 <h2 className="mb-3 mt-2 text-center" style={textStyle}>
                   1
                 </h2>
@@ -134,7 +136,7 @@ const Services = (props) => {
               <img className="img-fluid" src={step1} alt="stepsimage" />
             </div>
             <div className="col-3">
-              <div className="d-inline-flex p-2">
+              <div className="d-inline-flex p-2 imgtop">
                 <h2 className="mb-3 mt-2 text-center" style={textStyle}>
                   2
                 </h2>
@@ -158,7 +160,7 @@ const Services = (props) => {
             {/* </div>
           <div className="d-flex flex-row" style={{ marginTop: "25px" }}> */}
             <div className="col-3">
-              <div className="d-inline-flex p-2">
+              <div className="d-inline-flex p-2 imgtop">
                 <h2 className="mb-3 mt-2 text-center" style={textStyle}>
                   3
                 </h2>
@@ -180,7 +182,7 @@ const Services = (props) => {
               <img className="img-fluid" src={gpvstep3} alt="stepsimage" />
             </div>
             <div className="col-3">
-              <div className="d-inline-flex p-2">
+              <div className="d-inline-flex p-2 imgtop">
                 <h2 className="mb-3 mt-2 text-center" style={textStyle}>
                   4
                 </h2>

@@ -11,7 +11,7 @@ function HeroSection() {
     <>
       <section className="hero">
         <div className="overlay">
-          <div className="content">
+          <div className="content" style={{ marginLeft:'20%' }}>
             <ReactAudioPlayer
               src={homeaudio}
               autoPlay
@@ -23,7 +23,7 @@ function HeroSection() {
                 marginBottom: "4px",
                 marginRight: "5px",
                 borderRadius: "250px",
-                marginTop:"170px",
+                marginTop: "170px",
                 height: "60px",
                 width: "110px",
                 backgroundColor: "black",
