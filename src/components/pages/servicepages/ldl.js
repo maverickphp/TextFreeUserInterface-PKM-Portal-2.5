@@ -25,6 +25,8 @@ import ldlstep2 from "../../UI/ServicesImages/ldlstep2.png";
 
 import handstep4 from "../../UI/ServicesImages/handstep4.png";
 
+import FormDetails from "../../UI/FormDetails";
+
 const Services = (props) => {
   document.title = "PKM Punjab - Our Services";
   const myStyle = {
@@ -206,6 +208,7 @@ const Services = (props) => {
             </div>
           </div>
         </Tab.Content>
+<FormDetails />
       </Col>
     </Tab.Container>
   );

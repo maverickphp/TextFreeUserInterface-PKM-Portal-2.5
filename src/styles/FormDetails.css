@@ -1,0 +1,44 @@
+#breathing-button {
+  width: 220px;
+  padding: 16px;
+  border: 1px solid green;
+  -webkit-animation: breathing 5s ease-out infinite normal;
+  animation: breathing 5s ease-out infinite normal;
+  font-size: 16px;
+  margin: 3px auto;
+  background: green;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 500px;
+  text-align: center;
+  font-size: 26px;
+}
+
+@-webkit-keyframes breathing {
+  0% {
+    transform: scale(0.9);
+  }
+  25% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+@keyframes breathing {
+  0% {
+    transform: scale(0.9);
+  }
+  25% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}/*# sourceMappingURL=FormDetails.css.map */

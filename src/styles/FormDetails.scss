@@ -1,0 +1,63 @@
+#breathing-button {
+  width: 220px;
+  padding: 16px;
+  border: 1px solid green;
+  -webkit-animation: breathing 5s ease-out infinite normal;
+  animation: breathing 5s ease-out infinite normal;
+  font-size: 16px;
+  margin: 3px auto;
+  background: green;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 500px;
+  text-align: center;
+  font-size: 26px;
+}
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
