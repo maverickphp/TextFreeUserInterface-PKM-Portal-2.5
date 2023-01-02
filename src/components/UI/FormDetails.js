@@ -4,14 +4,43 @@ import "../../styles/FormDetails.css";
 
 function Form() {
   const form = useRef();
+  const fileInput = useRef();
   const {
     register,
+    reset,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  // const onSubmit = (data) => {
+  //   console.log(data);
+  // };
+
+  const onSubmit = async (data) => {
+    // data.image = fileInput.current.files[0];
+    const formData = new FormData();
+    for (let i = 0; i < data.files.length; i++) {
+      formData.append('files', data.files[i]);
+    }
+    // formData.append("files", data.files);
+    formData.append("cnic", data.cnic);
+    formData.append("contact", data.contact);
+    try {
+      const res = await fetch("http://localhost:8081/api/send-email", {
+        method: "POST",
+        body: formData
+      });
+      const json = await res.json();
+      if (json.success) {
+        reset();
+        console.log("Email sent successfully");
+      } else {
+        console.log(res);
+        console.error("Error sending email:", json.error);
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -145,6 +174,9 @@ function Form() {
             className="form-control"
             id="inputGroupFile01"
             multiple
+            {...register('files')}
+            // ref={fileInput}
+            accept="image/*"
           />
         </div>
         {/* <button type="submit" onClick={onSubmit} className="btn btn-primary mb-3">
