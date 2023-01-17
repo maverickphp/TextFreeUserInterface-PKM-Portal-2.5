@@ -46,20 +46,20 @@ app.post("/api/send-email", upload.array("files"), (req, res) => {
   `;
 
   const transporter = nodemailer.createTransport({
-    host: "premium195.web-hosting.com",
+    host: "*hostlink",
     port: 465,
     secure: true, // true for 465, false for other ports
     auth: {
-      user: "admin@devnigma.com",
-      pass: "devnigma123",
+      user: "*email*",
+      pass: "*pass*",
     },
   });
 
   // Send the email
   transporter.sendMail(
     {
-      from: "admin@devnigma.com",
-      to: "admin@devnigma.com",
+      from: "*email*",
+      to: "*email*",
       subject: "Form submission",
       html,
       attachments,
